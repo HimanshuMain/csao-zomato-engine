@@ -1,0 +1,501 @@
+﻿user_id,pref_cuisine,segment
+user_1,North Indian,Premium
+user_2,Fast Food,Budget
+user_3,Fast Food,Budget
+user_4,Chinese,Regular
+user_5,Chinese,Premium
+user_6,North Indian,Regular
+user_7,Chinese,Premium
+user_8,Chinese,Regular
+user_9,Fast Food,Premium
+user_10,Chinese,Premium
+user_11,North Indian,Regular
+user_12,Chinese,Premium
+user_13,Chinese,Regular
+user_14,Fast Food,Regular
+user_15,Chinese,Budget
+user_16,Fast Food,Budget
+user_17,Chinese,Regular
+user_18,Chinese,Budget
+user_19,North Indian,Regular
+user_20,Chinese,Premium
+user_21,Chinese,Budget
+user_22,Fast Food,Premium
+user_23,North Indian,Budget
+user_24,Chinese,Premium
+user_25,Chinese,Premium
+user_26,Chinese,Regular
+user_27,North Indian,Premium
+user_28,Chinese,Regular
+user_29,North Indian,Budget
+user_30,North Indian,Premium
+user_31,Chinese,Budget
+user_32,North Indian,Regular
+user_33,Fast Food,Budget
+user_34,North Indian,Budget
+user_35,Chinese,Premium
+user_36,North Indian,Regular
+user_37,North Indian,Budget
+user_38,North Indian,Regular
+user_39,North Indian,Regular
+user_40,Chinese,Premium
+user_41,Chinese,Budget
+user_42,Chinese,Regular
+user_43,Chinese,Premium
+user_44,Chinese,Regular
+user_45,Chinese,Premium
+user_46,North Indian,Premium
+user_47,North Indian,Budget
+user_48,Chinese,Regular
+user_49,Fast Food,Premium
+user_50,Fast Food,Premium
+user_51,Chinese,Budget
+user_52,Chinese,Regular
+user_53,Chinese,Premium
+user_54,North Indian,Premium
+user_55,Fast Food,Premium
+user_56,North Indian,Budget
+user_57,Fast Food,Regular
+user_58,North Indian,Regular
+user_59,Fast Food,Premium
+user_60,Chinese,Premium
+user_61,Fast Food,Premium
+user_62,North Indian,Premium
+user_63,Chinese,Budget
+user_64,Fast Food,Budget
+user_65,North Indian,Regular
+user_66,Fast Food,Premium
+user_67,Fast Food,Regular
+user_68,North Indian,Budget
+user_69,North Indian,Budget
+user_70,North Indian,Regular
+user_71,North Indian,Premium
+user_72,Chinese,Premium
+user_73,Chinese,Regular
+user_74,North Indian,Regular
+user_75,North Indian,Regular
+user_76,Fast Food,Regular
+user_77,North Indian,Budget
+user_78,Chinese,Premium
+user_79,Chinese,Budget
+user_80,Chinese,Premium
+user_81,Chinese,Premium
+user_82,Fast Food,Regular
+user_83,North Indian,Premium
+user_84,North Indian,Budget
+user_85,North Indian,Premium
+user_86,Chinese,Regular
+user_87,North Indian,Regular
+user_88,North Indian,Regular
+user_89,Fast Food,Premium
+user_90,North Indian,Regular
+user_91,Fast Food,Regular
+user_92,Fast Food,Premium
+user_93,Chinese,Premium
+user_94,North Indian,Premium
+user_95,North Indian,Premium
+user_96,North Indian,Premium
+user_97,Chinese,Premium
+user_98,Chinese,Budget
+user_99,Chinese,Budget
+user_100,North Indian,Regular
+user_101,Fast Food,Budget
+user_102,North Indian,Premium
+user_103,Fast Food,Budget
+user_104,North Indian,Regular
+user_105,Fast Food,Premium
+user_106,North Indian,Premium
+user_107,Fast Food,Budget
+user_108,Chinese,Budget
+user_109,Fast Food,Premium
+user_110,North Indian,Regular
+user_111,Chinese,Regular
+user_112,North Indian,Regular
+user_113,North Indian,Regular
+user_114,Fast Food,Budget
+user_115,Chinese,Budget
+user_116,Chinese,Regular
+user_117,Chinese,Regular
+user_118,Chinese,Premium
+user_119,North Indian,Budget
+user_120,Chinese,Regular
+user_121,Chinese,Budget
+user_122,North Indian,Budget
+user_123,North Indian,Budget
+user_124,Fast Food,Budget
+user_125,Chinese,Regular
+user_126,Fast Food,Budget
+user_127,North Indian,Budget
+user_128,Chinese,Regular
+user_129,Fast Food,Premium
+user_130,Fast Food,Budget
+user_131,Chinese,Budget
+user_132,North Indian,Premium
+user_133,North Indian,Premium
+user_134,North Indian,Regular
+user_135,Fast Food,Regular
+user_136,Chinese,Budget
+user_137,North Indian,Budget
+user_138,Chinese,Regular
+user_139,Fast Food,Budget
+user_140,Fast Food,Budget
+user_141,North Indian,Premium
+user_142,Fast Food,Premium
+user_143,North Indian,Premium
+user_144,Chinese,Premium
+user_145,Fast Food,Premium
+user_146,North Indian,Premium
+user_147,Fast Food,Budget
+user_148,Chinese,Regular
+user_149,North Indian,Regular
+user_150,Chinese,Budget
+user_151,Fast Food,Premium
+user_152,Chinese,Regular
+user_153,North Indian,Budget
+user_154,Chinese,Premium
+user_155,Chinese,Premium
+user_156,North Indian,Regular
+user_157,North Indian,Budget
+user_158,Chinese,Regular
+user_159,Chinese,Premium
+user_160,Fast Food,Budget
+user_161,Fast Food,Budget
+user_162,Chinese,Premium
+user_163,Chinese,Premium
+user_164,Chinese,Regular
+user_165,North Indian,Budget
+user_166,North Indian,Premium
+user_167,Chinese,Budget
+user_168,Fast Food,Regular
+user_169,Fast Food,Premium
+user_170,North Indian,Premium
+user_171,North Indian,Regular
+user_172,Fast Food,Budget
+user_173,North Indian,Regular
+user_174,North Indian,Budget
+user_175,Fast Food,Premium
+user_176,Fast Food,Budget
+user_177,Fast Food,Regular
+user_178,Chinese,Regular
+user_179,North Indian,Regular
+user_180,Fast Food,Regular
+user_181,North Indian,Budget
+user_182,North Indian,Premium
+user_183,Fast Food,Budget
+user_184,Chinese,Premium
+user_185,Chinese,Regular
+user_186,North Indian,Regular
+user_187,North Indian,Regular
+user_188,Chinese,Premium
+user_189,North Indian,Premium
+user_190,Fast Food,Budget
+user_191,North Indian,Budget
+user_192,North Indian,Premium
+user_193,Fast Food,Regular
+user_194,Fast Food,Budget
+user_195,North Indian,Premium
+user_196,Chinese,Budget
+user_197,Chinese,Premium
+user_198,North Indian,Budget
+user_199,Chinese,Premium
+user_200,Fast Food,Budget
+user_201,Chinese,Budget
+user_202,Fast Food,Premium
+user_203,North Indian,Premium
+user_204,North Indian,Regular
+user_205,Fast Food,Regular
+user_206,Chinese,Regular
+user_207,North Indian,Budget
+user_208,North Indian,Premium
+user_209,Chinese,Budget
+user_210,North Indian,Budget
+user_211,Chinese,Regular
+user_212,North Indian,Regular
+user_213,Chinese,Regular
+user_214,Fast Food,Premium
+user_215,North Indian,Regular
+user_216,Fast Food,Budget
+user_217,North Indian,Budget
+user_218,North Indian,Budget
+user_219,Chinese,Premium
+user_220,North Indian,Regular
+user_221,Chinese,Budget
+user_222,North Indian,Budget
+user_223,Fast Food,Regular
+user_224,North Indian,Regular
+user_225,Chinese,Premium
+user_226,Fast Food,Budget
+user_227,Fast Food,Regular
+user_228,Fast Food,Budget
+user_229,Fast Food,Premium
+user_230,North Indian,Regular
+user_231,North Indian,Premium
+user_232,Chinese,Budget
+user_233,North Indian,Regular
+user_234,Fast Food,Regular
+user_235,North Indian,Regular
+user_236,North Indian,Premium
+user_237,North Indian,Regular
+user_238,Chinese,Regular
+user_239,Chinese,Premium
+user_240,Chinese,Regular
+user_241,Fast Food,Budget
+user_242,Fast Food,Budget
+user_243,Fast Food,Regular
+user_244,North Indian,Budget
+user_245,North Indian,Regular
+user_246,Fast Food,Regular
+user_247,North Indian,Regular
+user_248,North Indian,Budget
+user_249,North Indian,Premium
+user_250,North Indian,Regular
+user_251,North Indian,Budget
+user_252,North Indian,Budget
+user_253,Chinese,Regular
+user_254,Fast Food,Premium
+user_255,Fast Food,Regular
+user_256,Chinese,Budget
+user_257,Chinese,Regular
+user_258,Fast Food,Budget
+user_259,Chinese,Budget
+user_260,North Indian,Budget
+user_261,Chinese,Regular
+user_262,North Indian,Regular
+user_263,North Indian,Budget
+user_264,North Indian,Premium
+user_265,Fast Food,Budget
+user_266,North Indian,Budget
+user_267,Fast Food,Regular
+user_268,Fast Food,Premium
+user_269,Chinese,Regular
+user_270,North Indian,Premium
+user_271,North Indian,Regular
+user_272,Fast Food,Premium
+user_273,North Indian,Regular
+user_274,Fast Food,Regular
+user_275,North Indian,Premium
+user_276,Fast Food,Regular
+user_277,Fast Food,Budget
+user_278,Fast Food,Regular
+user_279,Fast Food,Premium
+user_280,Fast Food,Premium
+user_281,Chinese,Regular
+user_282,North Indian,Regular
+user_283,Chinese,Budget
+user_284,Chinese,Regular
+user_285,North Indian,Premium
+user_286,Fast Food,Budget
+user_287,Chinese,Regular
+user_288,Fast Food,Premium
+user_289,Chinese,Budget
+user_290,Fast Food,Budget
+user_291,Chinese,Regular
+user_292,Fast Food,Premium
+user_293,Fast Food,Premium
+user_294,North Indian,Premium
+user_295,Fast Food,Budget
+user_296,North Indian,Premium
+user_297,Fast Food,Regular
+user_298,Fast Food,Premium
+user_299,Chinese,Budget
+user_300,North Indian,Premium
+user_301,Chinese,Budget
+user_302,North Indian,Budget
+user_303,Fast Food,Budget
+user_304,Chinese,Budget
+user_305,Fast Food,Premium
+user_306,Chinese,Budget
+user_307,North Indian,Budget
+user_308,Fast Food,Budget
+user_309,Chinese,Premium
+user_310,Chinese,Budget
+user_311,Chinese,Premium
+user_312,Fast Food,Budget
+user_313,North Indian,Budget
+user_314,North Indian,Budget
+user_315,Chinese,Premium
+user_316,Chinese,Premium
+user_317,Chinese,Premium
+user_318,North Indian,Regular
+user_319,Fast Food,Premium
+user_320,Chinese,Premium
+user_321,Fast Food,Budget
+user_322,Fast Food,Premium
+user_323,North Indian,Premium
+user_324,Fast Food,Regular
+user_325,North Indian,Regular
+user_326,North Indian,Premium
+user_327,Fast Food,Budget
+user_328,Fast Food,Budget
+user_329,North Indian,Regular
+user_330,Fast Food,Regular
+user_331,Chinese,Budget
+user_332,Fast Food,Regular
+user_333,North Indian,Regular
+user_334,Chinese,Regular
+user_335,Chinese,Regular
+user_336,Fast Food,Premium
+user_337,Fast Food,Regular
+user_338,Chinese,Regular
+user_339,Fast Food,Premium
+user_340,Fast Food,Premium
+user_341,North Indian,Budget
+user_342,Fast Food,Budget
+user_343,Chinese,Budget
+user_344,Chinese,Regular
+user_345,Chinese,Premium
+user_346,Chinese,Regular
+user_347,Chinese,Premium
+user_348,Fast Food,Regular
+user_349,Chinese,Premium
+user_350,Fast Food,Premium
+user_351,North Indian,Budget
+user_352,Fast Food,Premium
+user_353,Fast Food,Budget
+user_354,Chinese,Premium
+user_355,Chinese,Premium
+user_356,Chinese,Regular
+user_357,Chinese,Budget
+user_358,Chinese,Premium
+user_359,North Indian,Premium
+user_360,Chinese,Premium
+user_361,North Indian,Budget
+user_362,Chinese,Premium
+user_363,North Indian,Regular
+user_364,North Indian,Budget
+user_365,Chinese,Premium
+user_366,Chinese,Budget
+user_367,North Indian,Budget
+user_368,North Indian,Budget
+user_369,Fast Food,Budget
+user_370,Fast Food,Regular
+user_371,North Indian,Regular
+user_372,North Indian,Regular
+user_373,North Indian,Regular
+user_374,Fast Food,Premium
+user_375,Fast Food,Regular
+user_376,Chinese,Premium
+user_377,Chinese,Premium
+user_378,Chinese,Premium
+user_379,Fast Food,Premium
+user_380,North Indian,Regular
+user_381,North Indian,Regular
+user_382,Fast Food,Budget
+user_383,Chinese,Premium
+user_384,Fast Food,Regular
+user_385,Chinese,Premium
+user_386,Fast Food,Premium
+user_387,Chinese,Regular
+user_388,Chinese,Premium
+user_389,Chinese,Premium
+user_390,Chinese,Budget
+user_391,Chinese,Budget
+user_392,Chinese,Regular
+user_393,North Indian,Regular
+user_394,North Indian,Premium
+user_395,North Indian,Budget
+user_396,Chinese,Regular
+user_397,Chinese,Regular
+user_398,North Indian,Regular
+user_399,Chinese,Budget
+user_400,Fast Food,Premium
+user_401,North Indian,Regular
+user_402,Chinese,Premium
+user_403,Chinese,Budget
+user_404,Chinese,Regular
+user_405,Fast Food,Regular
+user_406,Fast Food,Regular
+user_407,Fast Food,Budget
+user_408,Chinese,Premium
+user_409,Fast Food,Regular
+user_410,Chinese,Regular
+user_411,Fast Food,Premium
+user_412,Chinese,Premium
+user_413,Chinese,Budget
+user_414,North Indian,Budget
+user_415,Fast Food,Budget
+user_416,North Indian,Regular
+user_417,Chinese,Premium
+user_418,Fast Food,Premium
+user_419,Chinese,Premium
+user_420,Chinese,Regular
+user_421,Chinese,Budget
+user_422,Chinese,Budget
+user_423,North Indian,Budget
+user_424,Chinese,Premium
+user_425,North Indian,Budget
+user_426,North Indian,Budget
+user_427,Chinese,Regular
+user_428,North Indian,Premium
+user_429,North Indian,Premium
+user_430,Fast Food,Premium
+user_431,North Indian,Regular
+user_432,Fast Food,Premium
+user_433,North Indian,Budget
+user_434,North Indian,Budget
+user_435,Fast Food,Budget
+user_436,Chinese,Regular
+user_437,Chinese,Budget
+user_438,North Indian,Regular
+user_439,Fast Food,Budget
+user_440,North Indian,Regular
+user_441,Fast Food,Budget
+user_442,Fast Food,Premium
+user_443,Chinese,Regular
+user_444,Chinese,Budget
+user_445,Chinese,Regular
+user_446,Chinese,Premium
+user_447,Chinese,Premium
+user_448,North Indian,Premium
+user_449,North Indian,Budget
+user_450,Chinese,Budget
+user_451,Chinese,Budget
+user_452,North Indian,Budget
+user_453,North Indian,Budget
+user_454,Chinese,Premium
+user_455,Chinese,Premium
+user_456,North Indian,Regular
+user_457,Fast Food,Premium
+user_458,Fast Food,Budget
+user_459,Fast Food,Premium
+user_460,North Indian,Budget
+user_461,Fast Food,Regular
+user_462,Chinese,Premium
+user_463,Chinese,Regular
+user_464,Fast Food,Regular
+user_465,Fast Food,Budget
+user_466,Chinese,Regular
+user_467,Fast Food,Premium
+user_468,North Indian,Regular
+user_469,North Indian,Regular
+user_470,Fast Food,Budget
+user_471,North Indian,Regular
+user_472,North Indian,Regular
+user_473,Fast Food,Budget
+user_474,Fast Food,Regular
+user_475,Fast Food,Regular
+user_476,Chinese,Budget
+user_477,Chinese,Budget
+user_478,Fast Food,Regular
+user_479,North Indian,Budget
+user_480,Chinese,Budget
+user_481,Fast Food,Budget
+user_482,Fast Food,Budget
+user_483,North Indian,Premium
+user_484,North Indian,Budget
+user_485,Fast Food,Regular
+user_486,Fast Food,Budget
+user_487,Fast Food,Premium
+user_488,Fast Food,Premium
+user_489,North Indian,Premium
+user_490,North Indian,Budget
+user_491,Chinese,Budget
+user_492,Fast Food,Budget
+user_493,Fast Food,Budget
+user_494,Chinese,Regular
+user_495,North Indian,Budget
+user_496,Fast Food,Regular
+user_497,North Indian,Budget
+user_498,Fast Food,Budget
+user_499,Fast Food,Regular
+user_500,Fast Food,Premium

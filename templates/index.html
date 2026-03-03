@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSAO Engine - Premium Delivery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .sticky-cart {
+            top: 6rem;
+            height: calc(100vh - 7rem);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <nav class="bg-white shadow-sm fixed w-full z-50 top-0 h-16 flex items-center">
+        <div class="max-w-7xl mx-auto px-6 w-full flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-layer-group text-rose-600 text-2xl"></i>
+                <h1 class="text-2xl font-black tracking-tighter text-slate-900">CSAO <span
+                        class="text-rose-600 text-sm align-top">Engine</span></h1>
+            </div>
+
+            <div class="hidden md:flex flex-1 max-w-2xl items-center gap-4 mx-8">
+                <div
+                    class="flex-1 flex items-center bg-slate-100 px-4 py-2 rounded-xl border border-slate-200 focus-within:border-rose-400 focus-within:bg-white transition-all">
+                    <i class="fas fa-search text-slate-400 mr-2"></i>
+                    <input type="text" id="search-input" placeholder="Search for dishes, cuisines..."
+                        class="bg-transparent outline-none w-full text-sm">
+                </div>
+
+                <div
+                    class="flex items-center gap-2 bg-rose-50 border border-rose-200 px-3 py-2 rounded-xl text-sm font-bold text-rose-700 shadow-sm">
+                    <i class="fas fa-clock"></i>
+                    <select id="time-simulator" class="bg-transparent outline-none cursor-pointer">
+                        <option value="current">Real-Time</option>
+                        <option value="14">Afternoon (Simulate 2 PM)</option>
+                        <option value="22">Late Night (Simulate 10 PM)</option>
+                        <option value="9">Morning (Simulate 9 AM)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-6 font-semibold text-slate-600" id="nav-right"></div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-6 pt-24 pb-12 flex gap-8">
+        <div class="w-full lg:w-2/3">
+            <h2 class="text-3xl font-black mb-6 tracking-tight">Order Food Online</h2>
+            <div id="category-tabs" class="flex gap-4 mb-8 overflow-x-auto pb-2 scrollbar-hide"></div>
+            <div id="menu-grid" class="w-full"></div>
+        </div>
+
+        <div class="hidden lg:block w-1/3 relative">
+            <div
+                class="sticky sticky-cart flex flex-col bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-slate-100 overflow-hidden">
+                <div class="p-6 border-b border-slate-100 bg-slate-50">
+                    <h3 class="text-xl font-black tracking-tight flex items-center gap-2">
+                        <i class="fas fa-shopping-bag text-rose-500"></i> Your Cart
+                    </h3>
+                    <p id="cart-res-name" class="text-sm text-slate-500 mt-1 font-medium">Add items to start building
+                        your meal</p>
+                </div>
+
+                <div id="cart-items" class="p-6 overflow-y-auto max-h-[30vh] space-y-4">
+                    <div class="text-center text-slate-400 mt-10">
+                        <i class="fas fa-utensils text-4xl mb-3 opacity-20"></i>
+                        <p class="font-medium">Good food is always cooking!</p>
+                    </div>
+                </div>
+
+                <div id="ai-module"
+                    class="hidden flex-1 border-t border-slate-100 bg-gradient-to-b from-white to-rose-50/30 overflow-hidden flex flex-col">
+                    <div class="px-6 py-4 bg-rose-50/50 border-b border-rose-100 flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-bolt text-amber-500"></i>
+                            <span class="font-black text-slate-800 text-sm">CSAO Intelligence</span>
+                        </div>
+                        <span
+                            class="text-[10px] uppercase tracking-wider font-bold text-rose-500 bg-rose-100 px-2 py-0.5 rounded">AI
+                            Powered</span>
+                    </div>
+                    <div id="ai-rail" class="p-6 overflow-y-auto space-y-3 flex-1 scrollbar-hide"></div>
+                </div>
+
+                <div class="p-6 bg-white border-t border-slate-100 shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.05)] mt-auto">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="font-bold text-slate-500 uppercase text-xs tracking-wider">To Pay</span>
+                        <span id="cart-total" class="font-black text-2xl text-slate-900">₹0</span>
+                    </div>
+                    <button id="checkout-btn"
+                        class="w-full bg-rose-600 text-white font-black py-4 rounded-xl shadow-lg shadow-rose-600/20 hover:bg-rose-700 transition-all disabled:opacity-50 uppercase tracking-wide"
+                        disabled>
+                        Proceed to Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkout-overlay"
+        class="fixed inset-0 bg-slate-50 z-[100] hidden flex flex-col items-center justify-center">
+        <div id="processing-state" class="text-center">
+            <div class="w-16 h-16 border-4 border-slate-200 border-t-rose-600 rounded-full animate-spin mx-auto mb-6">
+            </div>
+            <h2 class="text-2xl font-black text-slate-800 tracking-tight">Processing Payment...</h2>
+            <p class="text-slate-500 font-medium mt-2">Connecting securely</p>
+        </div>
+
+        <div id="success-state" class="hidden text-center w-full max-w-md px-6">
+            <div
+                class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6 text-emerald-500 text-4xl">
+                <i class="fas fa-check"></i></div>
+            <h2 class="text-3xl font-black text-slate-900 tracking-tight mb-2">Payment Completed!</h2>
+            <p class="text-slate-500 font-medium mb-10">Your food is being prepared.</p>
+
+            <div id="upsell-box"
+                class="hidden bg-white border border-rose-200 rounded-3xl p-6 shadow-xl text-left transform transition-all translate-y-4 opacity-0">
+                <div
+                    class="inline-block bg-rose-100 text-rose-700 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+                    Wait! Still Prepping</div>
+                <h3 class="text-xl font-black text-slate-800 leading-tight mb-2">Add this from the same kitchen?</h3>
+                <p class="text-sm text-slate-500 mb-6">No extra delivery fee. Add to your active order instantly.</p>
+                <div id="upsell-content"></div>
+            </div>
+
+            <button onclick="location.reload()"
+                class="mt-12 text-slate-500 font-bold hover:text-rose-600 underline underline-offset-4 transition-colors">Explore
+                More</button>
+        </div>
+    </div>
+
+    <script>
+        let cart = [];
+        let activeResId = null;
+        let globalMenuItems = [];
+        let activeCategory = 'All Content';
+        let activeUser = 'user_1';
+        let countdownInterval;
+        let recommendationTimeout;
+
+        const TABS = ['All Content', 'North Indian', 'Chinese', 'Fast Food', 'Desserts', 'Beverages', 'Party Combos'];
+
+        async function fetchFeed() {
+            const timeSimValue = document.getElementById('time-simulator').value;
+            const now = new Date();
+            const current_hour = timeSimValue === 'current' ? now.getHours() : parseInt(timeSimValue);
+
+            try {
+                const res = await fetch('/api/feed', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        user_id: activeUser,
+                        current_hour: current_hour,
+                        current_month: now.getMonth() + 1
+                    })
+                });
+                const data = await res.json();
+                globalMenuItems = data.items;
+                renderFeed();
+            } catch (err) { console.error("feed err:", err); }
+        }
+
+        async function initApp() {
+            try {
+                const userRes = await fetch('/api/users');
+                const userData = await userRes.json();
+
+                if (userData.users && userData.users.length > 0) {
+                    activeUser = userData.users[0].user_id;
+                }
+
+                const userSelectHtml = userData.users.map(u => `<option value="${u.user_id}">${u.user_id} (${u.segment} - ${u.pref_cuisine})</option>`).join('');
+
+                const navRight = document.getElementById('nav-right');
+                if (navRight) {
+                    navRight.innerHTML = `
+                        <div class="flex items-center gap-2 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200 shadow-sm">
+                            <i class="fas fa-user-circle text-rose-500"></i>
+                            <select id="user-selector" class="bg-transparent outline-none cursor-pointer text-sm font-bold text-slate-700">
+                                ${userSelectHtml}
+                            </select>
+                        </div>
+                    `;
+
+                    document.getElementById('user-selector').addEventListener('change', (e) => {
+                        activeUser = e.target.value;
+                        fetchFeed();
+                        fetchRecommendations();
+                    });
+                }
+
+                document.getElementById('time-simulator').addEventListener('change', () => {
+                    fetchFeed();
+                    fetchRecommendations();
+                });
+
+                document.getElementById('checkout-btn').addEventListener('click', processCheckout);
+                document.getElementById('search-input').addEventListener('input', handleSearch);
+
+                renderTabs();
+                await fetchFeed();
+
+            } catch (err) { console.error("init err:", err); }
+        }
+
+        function renderTabs() {
+            document.getElementById('category-tabs').innerHTML = TABS.map(tab => `
+                <button onclick="setCategory('${tab}')" 
+                    class="px-5 py-2 rounded-full border ${activeCategory === tab ? 'border-rose-500 bg-rose-50 text-rose-700' : 'border-slate-200 bg-white text-slate-700'} 
+                    hover:border-rose-300 transition whitespace-nowrap font-bold shadow-sm">
+                    ${tab}
+                </button>
+            `).join('');
+        }
+
+        function setCategory(tab) {
+            activeCategory = tab;
+            document.getElementById('search-input').value = '';
+            renderTabs();
+            renderFeed();
+        }
+
+        function handleSearch(e) {
+            const term = e.target.value.toLowerCase();
+            if (term.length > 0) {
+                let filteredItems = globalMenuItems.filter(item =>
+                    item.name.toLowerCase().includes(term) || item.res_name.toLowerCase().includes(term) || item.cuisine.toLowerCase().includes(term)
+                );
+                renderGrid(filteredItems, true);
+            } else { renderFeed(); }
+        }
+
+        function renderFeed() {
+            let filteredItems = globalMenuItems.filter(item => {
+                if (activeCategory === 'All Content') return true;
+                if (activeCategory === 'Desserts') return item.category === 'dessert';
+                if (activeCategory === 'Beverages') return item.category === 'beverage';
+                if (activeCategory === 'Party Combos') return item.category === 'combo';
+                if (activeCategory === 'North Indian') return item.cuisine === 'North Indian';
+                if (activeCategory === 'Chinese') return item.cuisine === 'Chinese';
+                if (activeCategory === 'Fast Food') return item.cuisine === 'Fast Food' || item.category === 'street_food';
+                return true;
+            });
+
+            const uniqueDishes = new Map();
+            filteredItems.forEach(item => {
+                if (!uniqueDishes.has(item.name) || uniqueDishes.get(item.name).feed_score < item.feed_score) {
+                    uniqueDishes.set(item.name, item);
+                }
+            });
+
+            let finalItems = Array.from(uniqueDishes.values());
+            finalItems.sort((a, b) => b.feed_score - a.feed_score);
+
+            renderGrid(finalItems, false);
+        }
+
+        function getSubcategory(item, activeTab) {
+            const name = item.name.toLowerCase();
+            const cat = item.category;
+
+            if (activeTab === 'North Indian') {
+                if (name.includes('paneer')) return 'Paneer Specials';
+                if (name.includes('dal') || name.includes('chana') || name.includes('veg') || name.includes('kofta')) return 'Vegetarian Curries';
+                if (name.includes('chicken') || name.includes('mutton') || name.includes('fish')) return 'Non-Veg Delights';
+                if (cat === 'bread') return 'Breads & Rice';
+                if (cat === 'main_biryani') return 'Biryanis';
+                if (cat === 'accompaniment_salan') return 'Raitas & Salan';
+                return 'Starters & Sides';
+            }
+            if (activeTab === 'Desserts') {
+                if (name.includes('ice cream') || name.includes('kulfi')) return 'Ice Creams & Kulfi';
+                if (name.includes('cake') || name.includes('brownie') || name.includes('pastry') || name.includes('cupcake')) return 'Cakes & Bakery';
+                return 'Traditional Mithai';
+            }
+            if (activeTab === 'Beverages') {
+                if (name.includes('coffee') || name.includes('shake')) return 'Cold Coffee & Shakes';
+                if (name.includes('chai') || name.includes('hot')) return 'Hot Beverages';
+                return 'Mocktails & Sodas';
+            }
+            if (activeTab === 'Chinese') {
+                if (name.includes('noodles') || name.includes('chowmein')) return 'Noodles';
+                if (name.includes('rice')) return 'Fried Rice';
+                if (name.includes('momo')) return 'Momos & Dimsum';
+                if (cat === 'starter') return 'Appetizers';
+                return 'Main Course Gravies';
+            }
+            if (activeTab === 'Fast Food') {
+                if (name.includes('pizza')) return 'Gourmet Pizzas';
+                if (name.includes('burger') || name.includes('sandwich')) return 'Burgers & Sandwiches';
+                if (name.includes('fries') || name.includes('nachos') || name.includes('wings')) return 'Quick Bites';
+                return 'Street Food & Chaat';
+            }
+            if (activeTab === 'Party Combos') return 'Curated Party Combos';
+
+            if (cat === 'bread' || cat === 'main_biryani' || cat === 'main_gravy' || cat === 'chinese_main') return 'Main Course';
+            if (cat === 'dessert') return 'Desserts';
+            if (cat === 'beverage') return 'Beverages';
+            if (cat === 'combo') return 'Party Combos';
+            return 'Starters & Snacks';
+        }
+
+        function createCardHTML(item) {
+            return `
+                <div class="bg-white p-5 rounded-2xl border border-slate-100 hover:shadow-lg hover:border-rose-100 transition-all group flex flex-col justify-between h-full fade-in">
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="w-4 h-4 rounded border flex items-center justify-center ${item.is_veg ? 'border-emerald-600' : 'border-rose-600'}">
+                                <div class="w-2 h-2 rounded-full ${item.is_veg ? 'bg-emerald-600' : 'bg-rose-600'}"></div>
+                            </div>
+                            ${item.popularity_score > 0.8 ? '<span class="text-[9px] font-bold bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded uppercase tracking-wider">Bestseller</span>' : ''}
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-800 leading-tight">${item.name}</h3>
+                        <p class="text-xs text-slate-500 mt-1">by <span class="font-semibold text-slate-700">${item.res_name}</span></p>
+                    </div>
+                    <div class="mt-6 flex justify-between items-center">
+                        <span class="font-black text-slate-800 text-lg">₹${item.price}</span>
+                        <button onclick='updateCart(${JSON.stringify(item).replace(/'/g, "&#39;")}, 1)' class="bg-white border border-rose-200 text-rose-600 font-black px-6 py-2 rounded-xl text-sm hover:bg-rose-50 group-hover:bg-rose-600 group-hover:text-white transition shadow-sm">ADD</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function toggleSeeMore(categoryId, btnElement) {
+            const hiddenDiv = document.getElementById(`hidden-grid-${categoryId}`);
+            if (hiddenDiv) {
+                hiddenDiv.classList.remove('hidden');
+                btnElement.style.display = 'none';
+            }
+        }
+
+        function renderGrid(items, isSearch = false) {
+            const grid = document.getElementById('menu-grid');
+            grid.className = "";
+
+            if (items.length === 0) {
+                grid.innerHTML = `<div class="text-center py-10 text-slate-500 font-bold bg-white rounded-2xl border border-slate-100 shadow-sm">No dishes found. Try another category or search term!</div>`;
+                return;
+            }
+
+            const groupedItems = {};
+            items.forEach(item => {
+                const subCat = isSearch ? 'Search Results' : getSubcategory(item, activeCategory);
+                if (!groupedItems[subCat]) groupedItems[subCat] = [];
+                groupedItems[subCat].push(item);
+            });
+
+            let html = '';
+            let catIndex = 0;
+
+            for (const [subCategory, subItems] of Object.entries(groupedItems)) {
+                const visibleItems = subItems.slice(0, 10);
+                const hiddenItems = subItems.slice(10);
+
+                html += `
+                    <div class="mb-10 w-full">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-black text-slate-800 tracking-tight">${subCategory}</h3>
+                            <div class="w-12 h-1.5 bg-rose-500 rounded-full mt-2"></div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            ${visibleItems.map(item => createCardHTML(item)).join('')}
+                        </div>
+                `;
+
+                if (hiddenItems.length > 0) {
+                    html += `
+                        <div id="hidden-grid-${catIndex}" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 fade-in">
+                            ${hiddenItems.map(item => createCardHTML(item)).join('')}
+                        </div>
+                        
+                        <div class="mt-6 text-center w-full">
+                            <button onclick="toggleSeeMore(${catIndex}, this)" class="bg-white border-2 border-slate-200 text-slate-600 font-bold px-8 py-2.5 rounded-full text-sm hover:border-rose-300 hover:text-rose-600 transition shadow-sm inline-flex items-center gap-2">
+                                See More (${hiddenItems.length} more) <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                    `;
+                }
+
+                html += `</div>`;
+                catIndex++;
+            }
+
+            grid.innerHTML = html;
+        }
+
+        async function updateCart(item, delta) {
+            if (cart.length > 0 && cart[0].res_id !== item.res_id) {
+                if (confirm(`Your cart has items from ${cart[0].res_name}. Clear it to order from ${item.res_name}?`)) {
+                    cart = [];
+                } else return;
+            }
+
+            activeResId = item.res_id;
+            let existing = cart.find(i => i.item_id === item.item_id);
+
+            if (!existing && delta > 0) cart.push({ ...item, qty: 1 });
+            else if (existing) existing.qty += delta;
+
+            cart = cart.filter(i => i.qty > 0);
+            renderCartUI();
+
+            if (cart.length > 0) {
+                document.getElementById('cart-res-name').innerText = `From ${item.res_name}`;
+                document.getElementById('checkout-btn').disabled = false;
+                fetchRecommendations();
+            } else {
+                resetCartUI();
+            }
+        }
+
+        function renderCartUI() {
+            const container = document.getElementById('cart-items');
+            let total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+            container.innerHTML = cart.map(item => `
+                <div class="flex justify-between items-center fade-in bg-white p-2 border-b border-slate-50 last:border-0">
+                    <div class="flex items-center gap-2 flex-1">
+                        <span class="font-bold text-sm text-slate-700 truncate pr-2">${item.name}</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-2 text-rose-600 font-bold border border-rose-100 rounded-lg px-2 py-1 shadow-sm">
+                            <button onclick='updateCart(${JSON.stringify(item).replace(/'/g, "&#39;")}, -1)' class="w-5 h-5 flex items-center justify-center hover:bg-rose-50 rounded">-</button>
+                            <span class="text-sm w-4 text-center">${item.qty}</span>
+                            <button onclick='updateCart(${JSON.stringify(item).replace(/'/g, "&#39;")}, 1)' class="w-5 h-5 flex items-center justify-center hover:bg-rose-50 rounded">+</button>
+                        </div>
+                        <span class="font-black text-sm w-12 text-right">₹${item.price * item.qty}</span>
+                    </div>
+                </div>
+            `).join('');
+            document.getElementById('cart-total').innerText = `₹${total}`;
+        }
+
+        function resetCartUI() {
+            document.getElementById('cart-res-name').innerText = 'Add items to start building your meal';
+            document.getElementById('cart-items').innerHTML = `<div class="text-center text-slate-400 mt-10"><i class="fas fa-utensils text-4xl mb-3 opacity-20"></i><p class="font-medium">Good food is always cooking!</p></div>`;
+            document.getElementById('ai-module').classList.add('hidden');
+            document.getElementById('checkout-btn').disabled = true;
+            document.getElementById('cart-total').innerText = `₹0`;
+        }
+
+        async function fetchRecommendations() {
+            if (cart.length === 0) return;
+
+            clearTimeout(recommendationTimeout);
+
+            // debounce api call
+            recommendationTimeout = setTimeout(async () => {
+                const timeSimValue = document.getElementById('time-simulator').value;
+                const now = new Date();
+                const current_hour = timeSimValue === 'current' ? now.getHours() : parseInt(timeSimValue);
+
+                try {
+                    const res = await fetch('/api/recommend', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            cart_item_ids: cart.map(i => i.item_id),
+                            res_id: activeResId,
+                            user_id: activeUser,
+                            current_hour: current_hour,
+                            current_month: now.getMonth() + 1
+                        })
+                    });
+
+                    const data = await res.json();
+                    const aiModule = document.getElementById('ai-module');
+                    const aiRail = document.getElementById('ai-rail');
+
+                    if (data.recommendations && data.recommendations.length > 0) {
+                        aiModule.classList.remove('hidden');
+                        aiRail.innerHTML = data.recommendations.map(item => `
+                            <div class="bg-white p-3.5 rounded-xl border border-rose-100 shadow-sm flex justify-between items-center fade-in">
+                                <div class="flex-1 pr-2">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <div class="w-2 h-2 rounded-sm border flex items-center justify-center ${item.is_veg ? 'border-emerald-600' : 'border-rose-600'}">
+                                            <div class="w-1 h-1 rounded-full ${item.is_veg ? 'bg-emerald-600' : 'bg-rose-600'}"></div>
+                                        </div>
+                                        <span class="text-[10px] font-bold text-rose-600 bg-rose-50 px-1.5 py-0.5 rounded uppercase tracking-wider">${item.reason}</span>
+                                    </div>
+                                    <p class="font-bold text-sm text-slate-800 leading-tight mt-1">${item.name}</p>
+                                    <p class="font-black text-sm text-slate-900 mt-1">₹${item.price}</p>
+                                </div>
+                                <button onclick='updateCart(${JSON.stringify(item).replace(/'/g, "&#39;")}, 1)' class="bg-rose-50 text-rose-600 w-10 h-10 rounded-xl font-black hover:bg-rose-600 hover:text-white transition flex items-center justify-center shadow-sm">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        `).join('');
+                    } else { aiModule.classList.add('hidden'); }
+                } catch (err) {
+                    console.error("rec fetch err:", err);
+                }
+            }, 300);
+        }
+
+        async function processCheckout() {
+            const overlay = document.getElementById('checkout-overlay');
+            const processing = document.getElementById('processing-state');
+            const success = document.getElementById('success-state');
+            const upsellBox = document.getElementById('upsell-box');
+
+            overlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+
+            try {
+                const totalAmount = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+                await fetch('/api/checkout', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        cart_item_ids: cart.map(i => i.item_id),
+                        res_id: activeResId,
+                        user_id: activeUser,
+                        total_amount: totalAmount
+                    })
+                });
+
+                const res = await fetch('/api/upsell', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ cart_item_ids: cart.map(i => i.item_id), res_id: activeResId })
+                });
+                const data = await res.json();
+
+                setTimeout(() => {
+                    processing.classList.add('hidden');
+                    success.classList.remove('hidden');
+
+                    if (data.upsells && data.upsells.length > 0) {
+                        const item = data.upsells[0];
+
+                        document.getElementById('upsell-content').innerHTML = `
+                            <div class="flex justify-between items-center bg-slate-50 p-4 rounded-2xl border border-slate-100 mb-4">
+                                <div>
+                                    <p class="font-black text-lg text-slate-800 leading-tight">${item.name}</p>
+                                    <div class="flex items-center gap-2 mt-1">
+                                        <span class="font-black text-emerald-600 text-lg">₹${item.discounted_price}</span>
+                                        <span class="text-xs text-slate-400 line-through font-bold">₹${item.price}</span>
+                                    </div>
+                                </div>
+                                <button id="add-upsell-btn" onclick="this.innerHTML='Added! ✅'; this.classList.remove('bg-slate-900', 'hover:bg-rose-600'); this.classList.add('bg-emerald-600', 'hover:bg-emerald-700'); setTimeout(() => location.reload(), 1200);" class="bg-slate-900 text-white font-black px-6 py-3 rounded-xl shadow-lg transition-colors duration-300">
+                                    Add +
+                                </button>
+                            </div>
+                            <div class="text-center font-bold text-rose-600">
+                                <i class="fas fa-stopwatch mr-1"></i> Offer expires in: <span id="upsell-timer" class="font-black text-lg">01:00</span>
+                            </div>
+                        `;
+
+                        setTimeout(() => {
+                            upsellBox.classList.remove('hidden');
+                            void upsellBox.offsetWidth;
+                            upsellBox.classList.remove('translate-y-4', 'opacity-0');
+
+                            let timeLeft = 60;
+                            countdownInterval = setInterval(() => {
+                                timeLeft--;
+                                const mins = Math.floor(timeLeft / 60).toString().padStart(2, '0');
+                                const secs = (timeLeft % 60).toString().padStart(2, '0');
+                                const timerEl = document.getElementById('upsell-timer');
+
+                                if (timerEl) timerEl.innerText = `${mins}:${secs}`;
+
+                                if (timeLeft <= 0) {
+                                    clearInterval(countdownInterval);
+                                    document.getElementById('add-upsell-btn').disabled = true;
+                                    document.getElementById('add-upsell-btn').classList.add('opacity-50', 'cursor-not-allowed');
+                                    document.getElementById('add-upsell-btn').innerText = "Expired";
+                                    if (timerEl) timerEl.parentElement.innerText = "Offer has expired.";
+                                }
+                            }, 1000);
+                        }, 800);
+                    }
+                }, 2000);
+            } catch (error) {
+                console.error("checkout err:", error);
+                location.reload();
+            }
+        }
+
+        initApp();
+    </script>
+</body>
+
+</html>

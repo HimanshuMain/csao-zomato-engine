@@ -1,0 +1,767 @@
+﻿item_id,res_id,name,category,price,is_veg,cuisine
+item_1,res_1,Black Forest Pastry,dessert,141,True,Universal
+item_2,res_1,Blue Lagoon Mocktail,beverage,171,True,Universal
+item_3,res_1,Chicken Dum Biryani,main_biryani,305,False,North Indian
+item_4,res_1,Chicken Tikka Masala,main_gravy,446,False,North Indian
+item_5,res_1,Mixed Raita,accompaniment_salan,76,True,North Indian
+item_6,res_1,Shahi Paneer,main_gravy,288,True,North Indian
+item_7,res_1,Family North Indian Feast,combo,1123,True,North Indian
+item_8,res_1,Vanilla Ice Cream,dessert,82,True,Universal
+item_9,res_1,Iced Peach Tea,beverage,139,True,Universal
+item_10,res_1,Fish Tikka,starter,361,False,North Indian
+item_11,res_1,Garlic Naan,bread,51,True,North Indian
+item_12,res_1,Garlic Dip,accompaniment_dip,39,True,Universal
+item_13,res_1,Jeera Rice,bread,132,True,North Indian
+item_14,res_1,Kesar Pista Kulfi,dessert,130,True,Universal
+item_15,res_1,Masala Chai,beverage,60,True,Universal
+item_16,res_1,Mutton Seekh Kebab,starter,326,False,North Indian
+item_17,res_1,Schezwan Chutney,accompaniment_dip,38,True,Universal
+item_18,res_1,Cheesecake Slice,dessert,274,True,Universal
+item_19,res_1,Sweet Tamarind Chutney,accompaniment_dip,27,True,Universal
+item_20,res_1,Ultimate Chinese Party Combo,combo,963,True,Chinese
+item_21,res_1,Boondi Raita,accompaniment_salan,50,True,North Indian
+item_22,res_1,Choco Lava Cake,dessert,169,True,Universal
+item_23,res_1,Chocolate Brownie,dessert,184,True,Universal
+item_24,res_1,Mirchi ka Salan,accompaniment_salan,60,True,North Indian
+item_25,res_1,Gajar Ka Halwa,dessert,117,True,Universal
+item_26,res_1,Tandoori Chicken,starter,331,False,North Indian
+item_27,res_1,Virgin Mojito,beverage,125,True,Universal
+item_28,res_1,Sweet Lassi,beverage,96,True,Universal
+item_29,res_1,Paneer Tikka,starter,237,True,North Indian
+item_30,res_1,Tandoori Roti,bread,37,True,North Indian
+item_31,res_1,Rasmalai,dessert,105,True,Universal
+item_32,res_1,Veg Hyderabadi Biryani,main_biryani,223,True,North Indian
+item_33,res_1,Lachha Paratha,bread,53,True,North Indian
+item_34,res_1,Veg Pulao,bread,163,True,North Indian
+item_35,res_1,Snack Party Platter,combo,684,True,Fast Food
+item_36,res_1,Gulab Jamun,dessert,88,True,Universal
+item_37,res_1,Noodles & Manchurian Bowl,combo,235,True,Chinese
+item_38,res_1,Palak Paneer,main_gravy,224,True,North Indian
+item_39,res_1,Moong Dal Halwa,dessert,189,True,Universal
+item_40,res_1,Paneer Tikka Biryani,main_biryani,253,True,North Indian
+item_41,res_1,Rabri,dessert,107,True,Universal
+item_42,res_1,Fresh Lime Soda,beverage,108,True,Universal
+item_43,res_1,Pineapple Raita,accompaniment_salan,72,True,North Indian
+item_44,res_1,Dal Makhani,main_gravy,265,True,North Indian
+item_45,res_2,Margherita Pizza,street_food,244,True,Fast Food
+item_46,res_2,Bhel Puri,street_food,67,True,Fast Food
+item_47,res_2,Classic French Fries,starter,83,True,Fast Food
+item_48,res_2,Burger & Fries Combo,combo,294,True,Fast Food
+item_49,res_2,Veg Grilled Sandwich,street_food,135,True,Fast Food
+item_50,res_2,Choco Lava Cake,dessert,218,True,Universal
+item_51,res_2,Executive Non-Veg Thali,combo,428,False,North Indian
+item_52,res_2,Cold Coffee,beverage,103,True,Universal
+item_53,res_2,Family North Indian Feast,combo,1004,True,North Indian
+item_54,res_2,Red Velvet Cupcake,dessert,110,True,Universal
+item_55,res_2,Paneer Tikka Wrap,street_food,142,True,Fast Food
+item_56,res_2,Classic Veg Burger,street_food,98,True,Fast Food
+item_57,res_2,Crispy Chicken Burger,street_food,142,False,Fast Food
+item_58,res_2,Pizza & Wings Party Pack,combo,800,False,Fast Food
+item_59,res_2,Gajar Ka Halwa,dessert,120,True,Universal
+item_60,res_2,Sweet Tamarind Chutney,accompaniment_dip,30,True,Universal
+item_61,res_2,Blue Lagoon Mocktail,beverage,166,True,Universal
+item_62,res_2,Diet Coke,beverage,78,True,Universal
+item_63,res_2,Chocolate Brownie,dessert,121,True,Universal
+item_64,res_2,Peri Peri Fries,starter,110,True,Fast Food
+item_65,res_2,Chicken BBQ Pizza,street_food,436,False,Fast Food
+item_66,res_2,Rabri,dessert,141,True,Universal
+item_67,res_2,Cheesecake Slice,dessert,262,True,Universal
+item_68,res_2,Garlic Dip,accompaniment_dip,36,True,Universal
+item_69,res_2,Onion Rings,starter,147,True,Fast Food
+item_70,res_2,Hot Cappuccino,beverage,113,True,Universal
+item_71,res_2,Samosa (2 pcs),street_food,44,True,Fast Food
+item_72,res_2,Mint Chutney,accompaniment_dip,33,True,Universal
+item_73,res_2,Kesar Pista Kulfi,dessert,139,True,Universal
+item_74,res_2,Mega Dessert Platter,combo,448,True,Universal
+item_75,res_2,Pani Puri,street_food,68,True,Fast Food
+item_76,res_2,Couple Biryani Combo,combo,505,False,North Indian
+item_77,res_2,Vada Pav,street_food,80,True,Fast Food
+item_78,res_2,Pepperoni Pizza,street_food,266,False,Fast Food
+item_79,res_2,Strawberry Shake,beverage,144,True,Universal
+item_80,res_2,Snack Party Platter,combo,670,True,Fast Food
+item_81,res_2,Black Forest Pastry,dessert,136,True,Universal
+item_82,res_2,Cheesy Loaded Nachos,starter,199,True,Fast Food
+item_83,res_2,Oreo Milkshake,beverage,167,True,Universal
+item_84,res_2,Rasmalai,dessert,113,True,Universal
+item_85,res_2,Sweet Lassi,beverage,84,True,Universal
+item_86,res_2,Ultimate Chinese Party Combo,combo,1005,True,Chinese
+item_87,res_2,Vanilla Ice Cream,dessert,84,True,Universal
+item_88,res_2,Schezwan Chutney,accompaniment_dip,48,True,Universal
+item_89,res_2,Iced Peach Tea,beverage,96,True,Universal
+item_90,res_2,Virgin Mojito,beverage,98,True,Universal
+item_91,res_2,Chicken Nuggets (6 pcs),starter,143,False,Fast Food
+item_92,res_2,Dahi Bhalla,street_food,95,True,Fast Food
+item_93,res_2,Gulab Jamun,dessert,78,True,Universal
+item_94,res_2,Mango Shake,beverage,157,True,Universal
+item_95,res_2,Spicy Mayo,accompaniment_dip,39,True,Universal
+item_96,res_2,Chole Bhature,street_food,177,True,Fast Food
+item_97,res_2,Crispy Chicken Wings,starter,274,False,Fast Food
+item_98,res_2,Masala Chai,beverage,73,True,Universal
+item_99,res_2,Pav Bhaji,street_food,156,True,Fast Food
+item_100,res_2,Aloo Tikki Chaat,street_food,66,True,Fast Food
+item_101,res_2,Moong Dal Halwa,dessert,162,True,Universal
+item_102,res_2,Executive Veg Thali,combo,329,True,North Indian
+item_103,res_2,Garlic Bread with Cheese,starter,123,True,Fast Food
+item_104,res_2,Fresh Lime Soda,beverage,104,True,Universal
+item_105,res_2,Masala Coke,beverage,62,True,Universal
+item_106,res_2,Noodles & Manchurian Bowl,combo,318,True,Chinese
+item_107,res_3,Tandoori Roti,bread,40,True,North Indian
+item_108,res_3,Chicken Tikka Masala,main_gravy,448,False,North Indian
+item_109,res_3,Cold Coffee,beverage,175,True,Universal
+item_110,res_3,Hot Cappuccino,beverage,157,True,Universal
+item_111,res_3,Burger & Fries Combo,combo,222,True,Fast Food
+item_112,res_3,Jeera Rice,bread,134,True,North Indian
+item_113,res_3,Chicken Seekh Kebab,starter,251,False,North Indian
+item_114,res_3,Noodles & Manchurian Bowl,combo,287,True,Chinese
+item_115,res_3,Hara Bhara Kebab,starter,225,True,North Indian
+item_116,res_3,Chana Masala,main_gravy,174,True,North Indian
+item_117,res_3,Blue Lagoon Mocktail,beverage,125,True,Universal
+item_118,res_3,Veg Pulao,bread,145,True,North Indian
+item_119,res_3,Schezwan Chutney,accompaniment_dip,35,True,Universal
+item_120,res_3,Paneer Tikka,starter,203,True,North Indian
+item_121,res_3,Mutton Biryani,main_biryani,374,False,North Indian
+item_122,res_3,Masala Chai,beverage,61,True,Universal
+item_123,res_3,Mirchi ka Salan,accompaniment_salan,57,True,North Indian
+item_124,res_3,Garlic Naan,bread,49,True,North Indian
+item_125,res_3,Gulab Jamun,dessert,96,True,Universal
+item_126,res_3,Paneer Butter Masala,main_gravy,355,True,North Indian
+item_127,res_3,Spicy Mayo,accompaniment_dip,34,True,Universal
+item_128,res_3,Couple Biryani Combo,combo,644,False,North Indian
+item_129,res_3,Pudina Paratha,bread,56,True,North Indian
+item_130,res_3,Gajar Ka Halwa,dessert,156,True,Universal
+item_131,res_3,Mushroom Tikka,starter,239,True,North Indian
+item_132,res_3,Kesar Pista Kulfi,dessert,126,True,Universal
+item_133,res_3,Oreo Milkshake,beverage,170,True,Universal
+item_134,res_3,Butter Naan,bread,41,True,North Indian
+item_135,res_3,Snack Party Platter,combo,640,True,Fast Food
+item_136,res_3,Mutton Rogan Josh,main_gravy,418,False,North Indian
+item_137,res_3,Rabri,dessert,138,True,Universal
+item_138,res_3,Red Velvet Cupcake,dessert,93,True,Universal
+item_139,res_3,Chicken Dum Biryani,main_biryani,205,False,North Indian
+item_140,res_3,Garlic Dip,accompaniment_dip,44,True,Universal
+item_141,res_3,Veg Hyderabadi Biryani,main_biryani,285,True,North Indian
+item_142,res_3,Steamed Rice,bread,77,True,North Indian
+item_143,res_3,Black Forest Pastry,dessert,115,True,Universal
+item_144,res_3,Diet Coke,beverage,72,True,Universal
+item_145,res_3,Fish Tikka,starter,307,False,North Indian
+item_146,res_3,Mixed Raita,accompaniment_salan,84,True,North Indian
+item_147,res_3,Executive Veg Thali,combo,335,True,North Indian
+item_148,res_3,Paneer Tikka Biryani,main_biryani,253,True,North Indian
+item_149,res_3,Dal Tadka,main_gravy,177,True,North Indian
+item_150,res_3,Lachha Paratha,bread,49,True,North Indian
+item_151,res_3,Pineapple Raita,accompaniment_salan,77,True,North Indian
+item_152,res_3,Boondi Raita,accompaniment_salan,64,True,North Indian
+item_153,res_3,Kadai Paneer,main_gravy,240,True,North Indian
+item_154,res_3,Chocolate Brownie,dessert,175,True,Universal
+item_155,res_3,Pizza & Wings Party Pack,combo,882,False,Fast Food
+item_156,res_3,Malai Kofta,main_gravy,318,True,North Indian
+item_157,res_3,Mix Veg Curry,main_gravy,213,True,North Indian
+item_158,res_3,Executive Non-Veg Thali,combo,312,False,North Indian
+item_159,res_4,Sweet Lassi,beverage,79,True,Universal
+item_160,res_4,Crispy Chicken Burger,street_food,147,False,Fast Food
+item_161,res_4,Strawberry Shake,beverage,133,True,Universal
+item_162,res_4,Fresh Lime Soda,beverage,93,True,Universal
+item_163,res_4,Classic Veg Burger,street_food,113,True,Fast Food
+item_164,res_4,Hot Cappuccino,beverage,140,True,Universal
+item_165,res_4,Spicy Mayo,accompaniment_dip,31,True,Universal
+item_166,res_4,Cheesy Loaded Nachos,starter,204,True,Fast Food
+item_167,res_4,Aloo Tikki Chaat,street_food,113,True,Fast Food
+item_168,res_4,Paneer Tikka Wrap,street_food,188,True,Fast Food
+item_169,res_4,Pepperoni Pizza,street_food,308,False,Fast Food
+item_170,res_4,Burger & Fries Combo,combo,279,True,Fast Food
+item_171,res_4,Pani Puri,street_food,78,True,Fast Food
+item_172,res_4,Samosa (2 pcs),street_food,59,True,Fast Food
+item_173,res_4,Red Velvet Cupcake,dessert,133,True,Universal
+item_174,res_4,Dahi Bhalla,street_food,98,True,Fast Food
+item_175,res_4,Choco Lava Cake,dessert,173,True,Universal
+item_176,res_4,Kesar Pista Kulfi,dessert,132,True,Universal
+item_177,res_4,Vanilla Ice Cream,dessert,114,True,Universal
+item_178,res_4,Masala Coke,beverage,66,True,Universal
+item_179,res_4,Rabri,dessert,137,True,Universal
+item_180,res_4,Gajar Ka Halwa,dessert,163,True,Universal
+item_181,res_4,Chicken Nuggets (6 pcs),starter,155,False,Fast Food
+item_182,res_4,Chole Bhature,street_food,156,True,Fast Food
+item_183,res_4,Cheesecake Slice,dessert,193,True,Universal
+item_184,res_4,Executive Non-Veg Thali,combo,448,False,North Indian
+item_185,res_4,Rasmalai,dessert,83,True,Universal
+item_186,res_4,Garlic Dip,accompaniment_dip,50,True,Universal
+item_187,res_4,Peri Peri Fries,starter,143,True,Fast Food
+item_188,res_4,Iced Peach Tea,beverage,110,True,Universal
+item_189,res_4,Snack Party Platter,combo,572,True,Fast Food
+item_190,res_4,Noodles & Manchurian Bowl,combo,246,True,Chinese
+item_191,res_4,Virgin Mojito,beverage,127,True,Universal
+item_192,res_4,Cold Coffee,beverage,173,True,Universal
+item_193,res_4,Bhel Puri,street_food,89,True,Fast Food
+item_194,res_4,Margherita Pizza,street_food,249,True,Fast Food
+item_195,res_4,Black Forest Pastry,dessert,133,True,Universal
+item_196,res_4,Cheese Sandwich,street_food,106,True,Fast Food
+item_197,res_4,Family North Indian Feast,combo,1114,True,North Indian
+item_198,res_4,Schezwan Chutney,accompaniment_dip,40,True,Universal
+item_199,res_4,Vada Pav,street_food,72,True,Fast Food
+item_200,res_4,Couple Biryani Combo,combo,596,False,North Indian
+item_201,res_4,Pizza & Wings Party Pack,combo,978,False,Fast Food
+item_202,res_4,Diet Coke,beverage,76,True,Universal
+item_203,res_4,Ultimate Chinese Party Combo,combo,826,True,Chinese
+item_204,res_4,Moong Dal Halwa,dessert,132,True,Universal
+item_205,res_4,Gulab Jamun,dessert,61,True,Universal
+item_206,res_4,Mango Shake,beverage,150,True,Universal
+item_207,res_4,Sweet Tamarind Chutney,accompaniment_dip,20,True,Universal
+item_208,res_4,Onion Rings,starter,133,True,Fast Food
+item_209,res_4,Mega Dessert Platter,combo,489,True,Universal
+item_210,res_4,Chocolate Brownie,dessert,152,True,Universal
+item_211,res_4,Masala Chai,beverage,40,True,Universal
+item_212,res_4,Executive Veg Thali,combo,325,True,North Indian
+item_213,res_5,Noodles & Manchurian Bowl,combo,290,True,Chinese
+item_214,res_5,Chicken Nuggets (6 pcs),starter,174,False,Fast Food
+item_215,res_5,Chocolate Brownie,dessert,129,True,Universal
+item_216,res_5,Mega Dessert Platter,combo,410,True,Universal
+item_217,res_5,Aloo Tikki Chaat,street_food,110,True,Fast Food
+item_218,res_5,Samosa (2 pcs),street_food,46,True,Fast Food
+item_219,res_5,Chole Bhature,street_food,130,True,Fast Food
+item_220,res_5,Hot Cappuccino,beverage,146,True,Universal
+item_221,res_5,Classic Veg Burger,street_food,119,True,Fast Food
+item_222,res_5,Onion Rings,starter,145,True,Fast Food
+item_223,res_5,Schezwan Chutney,accompaniment_dip,31,True,Universal
+item_224,res_5,Margherita Pizza,street_food,220,True,Fast Food
+item_225,res_5,Paneer Tikka Wrap,street_food,176,True,Fast Food
+item_226,res_5,Cheesecake Slice,dessert,194,True,Universal
+item_227,res_5,Diet Coke,beverage,75,True,Universal
+item_228,res_5,Choco Lava Cake,dessert,190,True,Universal
+item_229,res_5,Fresh Lime Soda,beverage,80,True,Universal
+item_230,res_5,Burger & Fries Combo,combo,259,True,Fast Food
+item_231,res_5,Oreo Milkshake,beverage,164,True,Universal
+item_232,res_5,Rasmalai,dessert,89,True,Universal
+item_233,res_5,Cheese Sandwich,street_food,143,True,Fast Food
+item_234,res_5,Classic French Fries,starter,119,True,Fast Food
+item_235,res_5,Gajar Ka Halwa,dessert,152,True,Universal
+item_236,res_5,Family North Indian Feast,combo,919,True,North Indian
+item_237,res_5,Garlic Bread with Cheese,starter,162,True,Fast Food
+item_238,res_5,Sweet Lassi,beverage,92,True,Universal
+item_239,res_5,Veg Grilled Sandwich,street_food,97,True,Fast Food
+item_240,res_5,Ultimate Chinese Party Combo,combo,989,True,Chinese
+item_241,res_5,Dahi Bhalla,street_food,93,True,Fast Food
+item_242,res_5,Spicy Mayo,accompaniment_dip,49,True,Universal
+item_243,res_5,Bhel Puri,street_food,72,True,Fast Food
+item_244,res_5,Pani Puri,street_food,63,True,Fast Food
+item_245,res_5,Crispy Chicken Wings,starter,226,False,Fast Food
+item_246,res_5,Moong Dal Halwa,dessert,138,True,Universal
+item_247,res_5,Black Forest Pastry,dessert,118,True,Universal
+item_248,res_5,Cold Coffee,beverage,171,True,Universal
+item_249,res_5,Garlic Dip,accompaniment_dip,48,True,Universal
+item_250,res_5,Masala Coke,beverage,66,True,Universal
+item_251,res_5,Strawberry Shake,beverage,127,True,Universal
+item_252,res_5,Mango Shake,beverage,159,True,Universal
+item_253,res_5,Pepperoni Pizza,street_food,259,False,Fast Food
+item_254,res_5,Executive Non-Veg Thali,combo,311,False,North Indian
+item_255,res_5,Peri Peri Fries,starter,149,True,Fast Food
+item_256,res_5,Snack Party Platter,combo,706,True,Fast Food
+item_257,res_6,Paneer Butter Masala,main_gravy,274,True,North Indian
+item_258,res_6,Jeera Rice,bread,92,True,North Indian
+item_259,res_6,Dal Tadka,main_gravy,156,True,North Indian
+item_260,res_6,Tandoori Chicken,starter,255,False,North Indian
+item_261,res_6,Chicken Tikka Masala,main_gravy,365,False,North Indian
+item_262,res_6,Garlic Naan,bread,59,True,North Indian
+item_263,res_6,Rabri,dessert,101,True,Universal
+item_264,res_6,Masala Coke,beverage,85,True,Universal
+item_265,res_6,Chicken Seekh Kebab,starter,349,False,North Indian
+item_266,res_6,Sweet Lassi,beverage,86,True,Universal
+item_267,res_6,Pizza & Wings Party Pack,combo,700,False,Fast Food
+item_268,res_6,Sweet Tamarind Chutney,accompaniment_dip,37,True,Universal
+item_269,res_6,Vanilla Ice Cream,dessert,106,True,Universal
+item_270,res_6,Rasmalai,dessert,92,True,Universal
+item_271,res_6,Strawberry Shake,beverage,162,True,Universal
+item_272,res_6,Dal Makhani,main_gravy,206,True,North Indian
+item_273,res_6,Spicy Mayo,accompaniment_dip,41,True,Universal
+item_274,res_6,Mixed Raita,accompaniment_salan,60,True,North Indian
+item_275,res_6,Pudina Paratha,bread,45,True,North Indian
+item_276,res_6,Chana Masala,main_gravy,171,True,North Indian
+item_277,res_6,Mutton Rogan Josh,main_gravy,528,False,North Indian
+item_278,res_6,Paneer Kulcha,bread,62,True,North Indian
+item_279,res_6,Hara Bhara Kebab,starter,238,True,North Indian
+item_280,res_6,Paneer Tikka,starter,239,True,North Indian
+item_281,res_6,Garlic Dip,accompaniment_dip,50,True,Universal
+item_282,res_6,Paneer Tikka Biryani,main_biryani,345,True,North Indian
+item_283,res_6,Iced Peach Tea,beverage,114,True,Universal
+item_284,res_6,Masala Chai,beverage,59,True,Universal
+item_285,res_6,Diet Coke,beverage,77,True,Universal
+item_286,res_6,Choco Lava Cake,dessert,171,True,Universal
+item_287,res_6,Gajar Ka Halwa,dessert,176,True,Universal
+item_288,res_6,Gulab Jamun,dessert,69,True,Universal
+item_289,res_6,Mushroom Tikka,starter,264,True,North Indian
+item_290,res_6,Malai Kofta,main_gravy,271,True,North Indian
+item_291,res_6,Executive Veg Thali,combo,286,True,North Indian
+item_292,res_6,Family North Indian Feast,combo,945,True,North Indian
+item_293,res_6,Mutton Seekh Kebab,starter,358,False,North Indian
+item_294,res_6,Mirchi ka Salan,accompaniment_salan,50,True,North Indian
+item_295,res_6,Mango Shake,beverage,156,True,Universal
+item_296,res_6,Veg Hyderabadi Biryani,main_biryani,214,True,North Indian
+item_297,res_6,Cheesecake Slice,dessert,262,True,Universal
+item_298,res_6,Boondi Raita,accompaniment_salan,72,True,North Indian
+item_299,res_6,Schezwan Chutney,accompaniment_dip,44,True,Universal
+item_300,res_6,Veg Pulao,bread,120,True,North Indian
+item_301,res_6,Moong Dal Halwa,dessert,133,True,Universal
+item_302,res_6,Palak Paneer,main_gravy,232,True,North Indian
+item_303,res_6,Steamed Rice,bread,75,True,North Indian
+item_304,res_6,Virgin Mojito,beverage,138,True,Universal
+item_305,res_6,Chicken Dum Biryani,main_biryani,220,False,North Indian
+item_306,res_6,Couple Biryani Combo,combo,634,False,North Indian
+item_307,res_6,Executive Non-Veg Thali,combo,368,False,North Indian
+item_308,res_7,Paneer Tikka Wrap,street_food,167,True,Fast Food
+item_309,res_7,Rasmalai,dessert,120,True,Universal
+item_310,res_7,Mango Shake,beverage,122,True,Universal
+item_311,res_7,Couple Biryani Combo,combo,532,False,North Indian
+item_312,res_7,Onion Rings,starter,146,True,Fast Food
+item_313,res_7,Cheesecake Slice,dessert,204,True,Universal
+item_314,res_7,Masala Coke,beverage,76,True,Universal
+item_315,res_7,Schezwan Chutney,accompaniment_dip,44,True,Universal
+item_316,res_7,Veg Grilled Sandwich,street_food,140,True,Fast Food
+item_317,res_7,Sweet Lassi,beverage,92,True,Universal
+item_318,res_7,Bhel Puri,street_food,64,True,Fast Food
+item_319,res_7,Dahi Bhalla,street_food,104,True,Fast Food
+item_320,res_7,Pizza & Wings Party Pack,combo,709,False,Fast Food
+item_321,res_7,Noodles & Manchurian Bowl,combo,282,True,Chinese
+item_322,res_7,Moong Dal Halwa,dessert,140,True,Universal
+item_323,res_7,Black Forest Pastry,dessert,104,True,Universal
+item_324,res_7,Chicken BBQ Pizza,street_food,432,False,Fast Food
+item_325,res_7,Margherita Pizza,street_food,206,True,Fast Food
+item_326,res_7,Burger & Fries Combo,combo,236,True,Fast Food
+item_327,res_7,Spicy Mayo,accompaniment_dip,38,True,Universal
+item_328,res_7,Cheesy Loaded Nachos,starter,205,True,Fast Food
+item_329,res_7,Gulab Jamun,dessert,78,True,Universal
+item_330,res_7,Garlic Bread with Cheese,starter,157,True,Fast Food
+item_331,res_7,Sweet Tamarind Chutney,accompaniment_dip,33,True,Universal
+item_332,res_7,Executive Non-Veg Thali,combo,434,False,North Indian
+item_333,res_7,Cheese Sandwich,street_food,130,True,Fast Food
+item_334,res_7,Strawberry Shake,beverage,153,True,Universal
+item_335,res_7,Classic Veg Burger,street_food,115,True,Fast Food
+item_336,res_7,Cold Coffee,beverage,177,True,Universal
+item_337,res_7,Pepperoni Pizza,street_food,251,False,Fast Food
+item_338,res_7,Snack Party Platter,combo,578,True,Fast Food
+item_339,res_7,Chole Bhature,street_food,169,True,Fast Food
+item_340,res_7,Peri Peri Fries,starter,126,True,Fast Food
+item_341,res_7,Samosa (2 pcs),street_food,54,True,Fast Food
+item_342,res_7,Oreo Milkshake,beverage,152,True,Universal
+item_343,res_7,Rabri,dessert,120,True,Universal
+item_344,res_7,Vada Pav,street_food,65,True,Fast Food
+item_345,res_7,Crispy Chicken Burger,street_food,135,False,Fast Food
+item_346,res_7,Vanilla Ice Cream,dessert,105,True,Universal
+item_347,res_7,Blue Lagoon Mocktail,beverage,157,True,Universal
+item_348,res_7,Iced Peach Tea,beverage,100,True,Universal
+item_349,res_8,Steamed Rice,bread,79,True,North Indian
+item_350,res_8,Spicy Mayo,accompaniment_dip,40,True,Universal
+item_351,res_8,Egg Dum Biryani,main_biryani,234,False,North Indian
+item_352,res_8,Rasmalai,dessert,110,True,Universal
+item_353,res_8,Shahi Paneer,main_gravy,244,True,North Indian
+item_354,res_8,Mutton Rogan Josh,main_gravy,474,False,North Indian
+item_355,res_8,Iced Peach Tea,beverage,128,True,Universal
+item_356,res_8,Executive Veg Thali,combo,254,True,North Indian
+item_357,res_8,Mega Dessert Platter,combo,466,True,Universal
+item_358,res_8,Snack Party Platter,combo,668,True,Fast Food
+item_359,res_8,Virgin Mojito,beverage,145,True,Universal
+item_360,res_8,Family North Indian Feast,combo,1130,True,North Indian
+item_361,res_8,Chana Masala,main_gravy,203,True,North Indian
+item_362,res_8,Pizza & Wings Party Pack,combo,910,False,Fast Food
+item_363,res_8,Hot Cappuccino,beverage,124,True,Universal
+item_364,res_8,Masala Chai,beverage,57,True,Universal
+item_365,res_8,Dal Makhani,main_gravy,246,True,North Indian
+item_366,res_8,Veg Hyderabadi Biryani,main_biryani,276,True,North Indian
+item_367,res_8,Chocolate Brownie,dessert,161,True,Universal
+item_368,res_8,Moong Dal Halwa,dessert,144,True,Universal
+item_369,res_8,Chicken Dum Biryani,main_biryani,305,False,North Indian
+item_370,res_8,Garlic Dip,accompaniment_dip,45,True,Universal
+item_371,res_8,Blue Lagoon Mocktail,beverage,180,True,Universal
+item_372,res_8,Garlic Naan,bread,44,True,North Indian
+item_373,res_8,Pudina Paratha,bread,57,True,North Indian
+item_374,res_8,Butter Naan,bread,64,True,North Indian
+item_375,res_8,Paneer Kulcha,bread,75,True,North Indian
+item_376,res_8,Tandoori Roti,bread,40,True,North Indian
+item_377,res_8,Fish Tikka,starter,324,False,North Indian
+item_378,res_8,Red Velvet Cupcake,dessert,117,True,Universal
+item_379,res_8,Mix Veg Curry,main_gravy,161,True,North Indian
+item_380,res_8,Mutton Seekh Kebab,starter,412,False,North Indian
+item_381,res_8,Couple Biryani Combo,combo,527,False,North Indian
+item_382,res_8,Mushroom Tikka,starter,221,True,North Indian
+item_383,res_8,Malai Soya Chaap,starter,216,True,North Indian
+item_384,res_8,Pineapple Raita,accompaniment_salan,72,True,North Indian
+item_385,res_8,Palak Paneer,main_gravy,254,True,North Indian
+item_386,res_8,Paneer Tikka Biryani,main_biryani,274,True,North Indian
+item_387,res_8,Dal Tadka,main_gravy,189,True,North Indian
+item_388,res_8,Jeera Rice,bread,114,True,North Indian
+item_389,res_8,Gulab Jamun,dessert,100,True,Universal
+item_390,res_8,Ultimate Chinese Party Combo,combo,980,True,Chinese
+item_391,res_8,Oreo Milkshake,beverage,161,True,Universal
+item_392,res_8,Paneer Tikka,starter,231,True,North Indian
+item_393,res_8,Cheesecake Slice,dessert,268,True,Universal
+item_394,res_8,Fresh Lime Soda,beverage,87,True,Universal
+item_395,res_8,Gajar Ka Halwa,dessert,159,True,Universal
+item_396,res_8,Masala Coke,beverage,68,True,Universal
+item_397,res_8,Noodles & Manchurian Bowl,combo,274,True,Chinese
+item_398,res_8,Vanilla Ice Cream,dessert,96,True,Universal
+item_399,res_8,Boondi Raita,accompaniment_salan,77,True,North Indian
+item_400,res_8,Kesar Pista Kulfi,dessert,108,True,Universal
+item_401,res_8,Cold Coffee,beverage,133,True,Universal
+item_402,res_8,Rabri,dessert,118,True,Universal
+item_403,res_8,Hara Bhara Kebab,starter,226,True,North Indian
+item_404,res_8,Choco Lava Cake,dessert,155,True,Universal
+item_405,res_8,Strawberry Shake,beverage,133,True,Universal
+item_406,res_9,Classic Veg Burger,street_food,81,True,Fast Food
+item_407,res_9,Garlic Dip,accompaniment_dip,45,True,Universal
+item_408,res_9,Strawberry Shake,beverage,156,True,Universal
+item_409,res_9,Burger & Fries Combo,combo,255,True,Fast Food
+item_410,res_9,Family North Indian Feast,combo,920,True,North Indian
+item_411,res_9,Couple Biryani Combo,combo,516,False,North Indian
+item_412,res_9,Cheesecake Slice,dessert,273,True,Universal
+item_413,res_9,Rasmalai,dessert,85,True,Universal
+item_414,res_9,Choco Lava Cake,dessert,208,True,Universal
+item_415,res_9,Aloo Tikki Chaat,street_food,66,True,Fast Food
+item_416,res_9,Executive Veg Thali,combo,307,True,North Indian
+item_417,res_9,Mint Chutney,accompaniment_dip,36,True,Universal
+item_418,res_9,Dahi Bhalla,street_food,84,True,Fast Food
+item_419,res_9,Fresh Lime Soda,beverage,78,True,Universal
+item_420,res_9,Bhel Puri,street_food,82,True,Fast Food
+item_421,res_9,Classic French Fries,starter,83,True,Fast Food
+item_422,res_9,Gajar Ka Halwa,dessert,138,True,Universal
+item_423,res_9,Veg Grilled Sandwich,street_food,115,True,Fast Food
+item_424,res_9,Snack Party Platter,combo,758,True,Fast Food
+item_425,res_9,Virgin Mojito,beverage,125,True,Universal
+item_426,res_9,Rabri,dessert,125,True,Universal
+item_427,res_9,Chole Bhature,street_food,122,True,Fast Food
+item_428,res_9,Vanilla Ice Cream,dessert,77,True,Universal
+item_429,res_9,Blue Lagoon Mocktail,beverage,141,True,Universal
+item_430,res_9,Chocolate Brownie,dessert,134,True,Universal
+item_431,res_9,Masala Chai,beverage,48,True,Universal
+item_432,res_9,Crispy Chicken Burger,street_food,178,False,Fast Food
+item_433,res_9,Pepperoni Pizza,street_food,369,False,Fast Food
+item_434,res_9,Samosa (2 pcs),street_food,59,True,Fast Food
+item_435,res_9,Garlic Bread with Cheese,starter,164,True,Fast Food
+item_436,res_9,Pizza & Wings Party Pack,combo,745,False,Fast Food
+item_437,res_9,Peri Peri Fries,starter,123,True,Fast Food
+item_438,res_9,Black Forest Pastry,dessert,143,True,Universal
+item_439,res_9,Executive Non-Veg Thali,combo,380,False,North Indian
+item_440,res_9,Noodles & Manchurian Bowl,combo,228,True,Chinese
+item_441,res_9,Gulab Jamun,dessert,71,True,Universal
+item_442,res_9,Ultimate Chinese Party Combo,combo,905,True,Chinese
+item_443,res_9,Chicken BBQ Pizza,street_food,326,False,Fast Food
+item_444,res_9,Sweet Tamarind Chutney,accompaniment_dip,31,True,Universal
+item_445,res_9,Pav Bhaji,street_food,120,True,Fast Food
+item_446,res_9,Cold Coffee,beverage,124,True,Universal
+item_447,res_9,Diet Coke,beverage,72,True,Universal
+item_448,res_9,Margherita Pizza,street_food,205,True,Fast Food
+item_449,res_9,Schezwan Chutney,accompaniment_dip,44,True,Universal
+item_450,res_9,Kesar Pista Kulfi,dessert,118,True,Universal
+item_451,res_9,Hot Cappuccino,beverage,156,True,Universal
+item_452,res_9,Chicken Nuggets (6 pcs),starter,174,False,Fast Food
+item_453,res_9,Cheese Sandwich,street_food,114,True,Fast Food
+item_454,res_9,Mega Dessert Platter,combo,444,True,Universal
+item_455,res_9,Pani Puri,street_food,67,True,Fast Food
+item_456,res_9,Crispy Chicken Wings,starter,212,False,Fast Food
+item_457,res_9,Paneer Tikka Wrap,street_food,205,True,Fast Food
+item_458,res_10,Executive Veg Thali,combo,280,True,North Indian
+item_459,res_10,Gulab Jamun,dessert,75,True,Universal
+item_460,res_10,Rabri,dessert,136,True,Universal
+item_461,res_10,Hot Cappuccino,beverage,114,True,Universal
+item_462,res_10,Chicken Fried Rice,chinese_main,214,False,Chinese
+item_463,res_10,Virgin Mojito,beverage,150,True,Universal
+item_464,res_10,Gajar Ka Halwa,dessert,147,True,Universal
+item_465,res_10,Cheesecake Slice,dessert,269,True,Universal
+item_466,res_10,Mango Shake,beverage,148,True,Universal
+item_467,res_10,Sweet Tamarind Chutney,accompaniment_dip,40,True,Universal
+item_468,res_10,Mushroom Manchurian,chinese_main,245,True,Chinese
+item_469,res_10,Veg Chowmein,chinese_main,141,True,Chinese
+item_470,res_10,Fried Rice,chinese_main,216,True,Chinese
+item_471,res_10,Chocolate Brownie,dessert,143,True,Universal
+item_472,res_10,Snack Party Platter,combo,729,True,Fast Food
+item_473,res_10,Kesar Pista Kulfi,dessert,107,True,Universal
+item_474,res_10,Schezwan Noodles,chinese_main,193,True,Chinese
+item_475,res_10,Black Forest Pastry,dessert,129,True,Universal
+item_476,res_10,Couple Biryani Combo,combo,650,False,North Indian
+item_477,res_10,Noodles & Manchurian Bowl,combo,283,True,Chinese
+item_478,res_10,Cold Coffee,beverage,133,True,Universal
+item_479,res_10,Choco Lava Cake,dessert,193,True,Universal
+item_480,res_10,Chicken Lollipop,starter,275,False,Chinese
+item_481,res_10,Oreo Milkshake,beverage,140,True,Universal
+item_482,res_10,Chilli Chicken Gravy,chinese_main,285,False,Chinese
+item_483,res_10,Masala Chai,beverage,74,True,Universal
+item_484,res_10,Red Velvet Cupcake,dessert,105,True,Universal
+item_485,res_10,Mega Dessert Platter,combo,545,True,Universal
+item_486,res_10,Moong Dal Halwa,dessert,122,True,Universal
+item_487,res_10,Chicken Spring Roll,starter,256,False,Chinese
+item_488,res_10,Veg Momos (8 pcs),starter,137,True,Chinese
+item_489,res_10,Chicken Momos (8 pcs),starter,147,False,Chinese
+item_490,res_10,Crispy Corn,starter,211,True,Chinese
+item_491,res_10,Vanilla Ice Cream,dessert,111,True,Universal
+item_492,res_10,Strawberry Shake,beverage,153,True,Universal
+item_493,res_10,Sweet Lassi,beverage,79,True,Universal
+item_494,res_10,Fresh Lime Soda,beverage,77,True,Universal
+item_495,res_10,Executive Non-Veg Thali,combo,352,False,North Indian
+item_496,res_10,Chilli Paneer Gravy,chinese_main,249,True,Chinese
+item_497,res_10,Mint Chutney,accompaniment_dip,23,True,Universal
+item_498,res_10,Burger & Fries Combo,combo,200,True,Fast Food
+item_499,res_10,Iced Peach Tea,beverage,139,True,Universal
+item_500,res_10,Spicy Mayo,accompaniment_dip,32,True,Universal
+item_501,res_10,Honey Chilli Potato,starter,188,True,Chinese
+item_502,res_10,Masala Coke,beverage,66,True,Universal
+item_503,res_10,Ultimate Chinese Party Combo,combo,900,True,Chinese
+item_504,res_11,Tandoori Roti,bread,28,True,North Indian
+item_505,res_11,Choco Lava Cake,dessert,139,True,Universal
+item_506,res_11,Executive Veg Thali,combo,300,True,North Indian
+item_507,res_11,Palak Paneer,main_gravy,239,True,North Indian
+item_508,res_11,Jeera Rice,bread,132,True,North Indian
+item_509,res_11,Cold Coffee,beverage,150,True,Universal
+item_510,res_11,Couple Biryani Combo,combo,673,False,North Indian
+item_511,res_11,Burger & Fries Combo,combo,275,True,Fast Food
+item_512,res_11,Mutton Seekh Kebab,starter,346,False,North Indian
+item_513,res_11,Boondi Raita,accompaniment_salan,81,True,North Indian
+item_514,res_11,Mango Shake,beverage,134,True,Universal
+item_515,res_11,Malai Soya Chaap,starter,233,True,North Indian
+item_516,res_11,Mushroom Tikka,starter,208,True,North Indian
+item_517,res_11,Pudina Paratha,bread,64,True,North Indian
+item_518,res_11,Strawberry Shake,beverage,143,True,Universal
+item_519,res_11,Vanilla Ice Cream,dessert,116,True,Universal
+item_520,res_11,Masala Coke,beverage,83,True,Universal
+item_521,res_11,Iced Peach Tea,beverage,126,True,Universal
+item_522,res_11,Steamed Rice,bread,107,True,North Indian
+item_523,res_11,Mirchi ka Salan,accompaniment_salan,70,True,North Indian
+item_524,res_11,Kadai Paneer,main_gravy,225,True,North Indian
+item_525,res_11,Paneer Tikka Biryani,main_biryani,224,True,North Indian
+item_526,res_11,Noodles & Manchurian Bowl,combo,269,True,Chinese
+item_527,res_11,Butter Naan,bread,42,True,North Indian
+item_528,res_11,Executive Non-Veg Thali,combo,317,False,North Indian
+item_529,res_11,Spicy Mayo,accompaniment_dip,39,True,Universal
+item_530,res_11,Rasmalai,dessert,113,True,Universal
+item_531,res_11,Paneer Butter Masala,main_gravy,344,True,North Indian
+item_532,res_11,Chicken Seekh Kebab,starter,316,False,North Indian
+item_533,res_11,Tandoori Chicken,starter,319,False,North Indian
+item_534,res_11,Moong Dal Halwa,dessert,127,True,Universal
+item_535,res_11,Kesar Pista Kulfi,dessert,103,True,Universal
+item_536,res_11,Malai Kofta,main_gravy,283,True,North Indian
+item_537,res_11,Gajar Ka Halwa,dessert,128,True,Universal
+item_538,res_11,Hara Bhara Kebab,starter,238,True,North Indian
+item_539,res_11,Mix Veg Curry,main_gravy,260,True,North Indian
+item_540,res_11,Virgin Mojito,beverage,90,True,Universal
+item_541,res_11,Garlic Naan,bread,72,True,North Indian
+item_542,res_11,Dal Makhani,main_gravy,288,True,North Indian
+item_543,res_11,Masala Chai,beverage,63,True,Universal
+item_544,res_11,Fish Tikka,starter,375,False,North Indian
+item_545,res_11,Mutton Rogan Josh,main_gravy,427,False,North Indian
+item_546,res_11,Cheesecake Slice,dessert,219,True,Universal
+item_547,res_11,Diet Coke,beverage,61,True,Universal
+item_548,res_11,Ultimate Chinese Party Combo,combo,901,True,Chinese
+item_549,res_11,Gulab Jamun,dessert,97,True,Universal
+item_550,res_11,Oreo Milkshake,beverage,161,True,Universal
+item_551,res_11,Pineapple Raita,accompaniment_salan,86,True,North Indian
+item_552,res_12,Couple Biryani Combo,combo,692,False,North Indian
+item_553,res_12,Chicken Tikka Masala,main_gravy,450,False,North Indian
+item_554,res_12,Mushroom Tikka,starter,232,True,North Indian
+item_555,res_12,Fresh Lime Soda,beverage,77,True,Universal
+item_556,res_12,Chocolate Brownie,dessert,149,True,Universal
+item_557,res_12,Steamed Rice,bread,88,True,North Indian
+item_558,res_12,Rabri,dessert,136,True,Universal
+item_559,res_12,Chicken Seekh Kebab,starter,340,False,North Indian
+item_560,res_12,Mutton Seekh Kebab,starter,298,False,North Indian
+item_561,res_12,Black Forest Pastry,dessert,129,True,Universal
+item_562,res_12,Tandoori Roti,bread,33,True,North Indian
+item_563,res_12,Family North Indian Feast,combo,940,True,North Indian
+item_564,res_12,Garlic Dip,accompaniment_dip,35,True,Universal
+item_565,res_12,Iced Peach Tea,beverage,101,True,Universal
+item_566,res_12,Lachha Paratha,bread,47,True,North Indian
+item_567,res_12,Malai Soya Chaap,starter,205,True,North Indian
+item_568,res_12,Oreo Milkshake,beverage,132,True,Universal
+item_569,res_12,Spicy Mayo,accompaniment_dip,42,True,Universal
+item_570,res_12,Paneer Tikka Biryani,main_biryani,270,True,North Indian
+item_571,res_12,Kadai Paneer,main_gravy,285,True,North Indian
+item_572,res_12,Sweet Lassi,beverage,100,True,Universal
+item_573,res_12,Mutton Biryani,main_biryani,359,False,North Indian
+item_574,res_12,Mango Shake,beverage,139,True,Universal
+item_575,res_12,Gulab Jamun,dessert,80,True,Universal
+item_576,res_12,Blue Lagoon Mocktail,beverage,172,True,Universal
+item_577,res_12,Strawberry Shake,beverage,140,True,Universal
+item_578,res_12,Dal Makhani,main_gravy,205,True,North Indian
+item_579,res_12,Kesar Pista Kulfi,dessert,119,True,Universal
+item_580,res_12,Virgin Mojito,beverage,91,True,Universal
+item_581,res_12,Diet Coke,beverage,68,True,Universal
+item_582,res_12,Mega Dessert Platter,combo,470,True,Universal
+item_583,res_12,Butter Naan,bread,70,True,North Indian
+item_584,res_12,Moong Dal Halwa,dessert,189,True,Universal
+item_585,res_12,Noodles & Manchurian Bowl,combo,271,True,Chinese
+item_586,res_12,Paneer Kulcha,bread,67,True,North Indian
+item_587,res_12,Butter Chicken,main_gravy,293,False,North Indian
+item_588,res_12,Palak Paneer,main_gravy,252,True,North Indian
+item_589,res_12,Boondi Raita,accompaniment_salan,85,True,North Indian
+item_590,res_12,Burger & Fries Combo,combo,247,True,Fast Food
+item_591,res_12,Mint Chutney,accompaniment_dip,40,True,Universal
+item_592,res_12,Malai Kofta,main_gravy,290,True,North Indian
+item_593,res_12,Mutton Rogan Josh,main_gravy,466,False,North Indian
+item_594,res_12,Chana Masala,main_gravy,210,True,North Indian
+item_595,res_12,Executive Non-Veg Thali,combo,399,False,North Indian
+item_596,res_12,Veg Pulao,bread,121,True,North Indian
+item_597,res_12,Pudina Paratha,bread,65,True,North Indian
+item_598,res_12,Choco Lava Cake,dessert,198,True,Universal
+item_599,res_12,Schezwan Chutney,accompaniment_dip,47,True,Universal
+item_600,res_12,Ultimate Chinese Party Combo,combo,1019,True,Chinese
+item_601,res_12,Garlic Naan,bread,52,True,North Indian
+item_602,res_12,Red Velvet Cupcake,dessert,110,True,Universal
+item_603,res_12,Jeera Rice,bread,109,True,North Indian
+item_604,res_12,Vanilla Ice Cream,dessert,104,True,Universal
+item_605,res_12,Masala Coke,beverage,63,True,Universal
+item_606,res_12,Dal Tadka,main_gravy,205,True,North Indian
+item_607,res_12,Veg Hyderabadi Biryani,main_biryani,319,True,North Indian
+item_608,res_12,Masala Chai,beverage,67,True,Universal
+item_609,res_12,Hara Bhara Kebab,starter,196,True,North Indian
+item_610,res_12,Rasmalai,dessert,130,True,Universal
+item_611,res_12,Mix Veg Curry,main_gravy,231,True,North Indian
+item_612,res_12,Sweet Tamarind Chutney,accompaniment_dip,25,True,Universal
+item_613,res_12,Executive Veg Thali,combo,336,True,North Indian
+item_614,res_12,Tandoori Chicken,starter,289,False,North Indian
+item_615,res_12,Egg Dum Biryani,main_biryani,199,False,North Indian
+item_616,res_13,Blue Lagoon Mocktail,beverage,150,True,Universal
+item_617,res_13,Mirchi ka Salan,accompaniment_salan,78,True,North Indian
+item_618,res_13,Mutton Rogan Josh,main_gravy,363,False,North Indian
+item_619,res_13,Pineapple Raita,accompaniment_salan,92,True,North Indian
+item_620,res_13,Virgin Mojito,beverage,116,True,Universal
+item_621,res_13,Chocolate Brownie,dessert,144,True,Universal
+item_622,res_13,Veg Hyderabadi Biryani,main_biryani,214,True,North Indian
+item_623,res_13,Black Forest Pastry,dessert,119,True,Universal
+item_624,res_13,Paneer Butter Masala,main_gravy,300,True,North Indian
+item_625,res_13,Mega Dessert Platter,combo,500,True,Universal
+item_626,res_13,Garlic Dip,accompaniment_dip,36,True,Universal
+item_627,res_13,Boondi Raita,accompaniment_salan,71,True,North Indian
+item_628,res_13,Palak Paneer,main_gravy,247,True,North Indian
+item_629,res_13,Diet Coke,beverage,74,True,Universal
+item_630,res_13,Butter Chicken,main_gravy,275,False,North Indian
+item_631,res_13,Missi Roti,bread,41,True,North Indian
+item_632,res_13,Moong Dal Halwa,dessert,163,True,Universal
+item_633,res_13,Mix Veg Curry,main_gravy,195,True,North Indian
+item_634,res_13,Mushroom Tikka,starter,227,True,North Indian
+item_635,res_13,Chicken Seekh Kebab,starter,209,False,North Indian
+item_636,res_13,Veg Pulao,bread,155,True,North Indian
+item_637,res_13,Hara Bhara Kebab,starter,181,True,North Indian
+item_638,res_13,Cold Coffee,beverage,105,True,Universal
+item_639,res_13,Kesar Pista Kulfi,dessert,135,True,Universal
+item_640,res_13,Egg Dum Biryani,main_biryani,182,False,North Indian
+item_641,res_13,Chicken Tikka Masala,main_gravy,283,False,North Indian
+item_642,res_13,Burger & Fries Combo,combo,220,True,Fast Food
+item_643,res_13,Noodles & Manchurian Bowl,combo,295,True,Chinese
+item_644,res_13,Mango Shake,beverage,128,True,Universal
+item_645,res_13,Choco Lava Cake,dessert,132,True,Universal
+item_646,res_13,Pizza & Wings Party Pack,combo,856,False,Fast Food
+item_647,res_13,Shahi Paneer,main_gravy,314,True,North Indian
+item_648,res_13,Masala Coke,beverage,90,True,Universal
+item_649,res_13,Mint Chutney,accompaniment_dip,22,True,Universal
+item_650,res_13,Rasmalai,dessert,93,True,Universal
+item_651,res_13,Couple Biryani Combo,combo,576,False,North Indian
+item_652,res_13,Schezwan Chutney,accompaniment_dip,37,True,Universal
+item_653,res_13,Vanilla Ice Cream,dessert,75,True,Universal
+item_654,res_13,Red Velvet Cupcake,dessert,103,True,Universal
+item_655,res_13,Mutton Seekh Kebab,starter,372,False,North Indian
+item_656,res_13,Gulab Jamun,dessert,71,True,Universal
+item_657,res_13,Oreo Milkshake,beverage,190,True,Universal
+item_658,res_13,Steamed Rice,bread,72,True,North Indian
+item_659,res_13,Ultimate Chinese Party Combo,combo,911,True,Chinese
+item_660,res_13,Executive Veg Thali,combo,290,True,North Indian
+item_661,res_13,Sweet Tamarind Chutney,accompaniment_dip,36,True,Universal
+item_662,res_13,Chicken Dum Biryani,main_biryani,282,False,North Indian
+item_663,res_13,Paneer Kulcha,bread,80,True,North Indian
+item_664,res_13,Malai Kofta,main_gravy,251,True,North Indian
+item_665,res_13,Fresh Lime Soda,beverage,91,True,Universal
+item_666,res_13,Tandoori Roti,bread,25,True,North Indian
+item_667,res_13,Paneer Tikka Biryani,main_biryani,221,True,North Indian
+item_668,res_13,Fish Tikka,starter,414,False,North Indian
+item_669,res_13,Gajar Ka Halwa,dessert,122,True,Universal
+item_670,res_13,Garlic Naan,bread,79,True,North Indian
+item_671,res_13,Rabri,dessert,134,True,Universal
+item_672,res_13,Pudina Paratha,bread,45,True,North Indian
+item_673,res_13,Mixed Raita,accompaniment_salan,63,True,North Indian
+item_674,res_13,Malai Soya Chaap,starter,254,True,North Indian
+item_675,res_13,Kadai Paneer,main_gravy,248,True,North Indian
+item_676,res_13,Iced Peach Tea,beverage,102,True,Universal
+item_677,res_13,Executive Non-Veg Thali,combo,395,False,North Indian
+item_678,res_13,Tandoori Chicken,starter,329,False,North Indian
+item_679,res_13,Strawberry Shake,beverage,161,True,Universal
+item_680,res_14,Masala Coke,beverage,79,True,Universal
+item_681,res_14,Dahi Bhalla,street_food,93,True,Fast Food
+item_682,res_14,Couple Biryani Combo,combo,690,False,North Indian
+item_683,res_14,Strawberry Shake,beverage,147,True,Universal
+item_684,res_14,Vada Pav,street_food,63,True,Fast Food
+item_685,res_14,Ultimate Chinese Party Combo,combo,831,True,Chinese
+item_686,res_14,Mango Shake,beverage,118,True,Universal
+item_687,res_14,Masala Chai,beverage,59,True,Universal
+item_688,res_14,Gajar Ka Halwa,dessert,172,True,Universal
+item_689,res_14,Sweet Tamarind Chutney,accompaniment_dip,39,True,Universal
+item_690,res_14,Family North Indian Feast,combo,1068,True,North Indian
+item_691,res_14,Pani Puri,street_food,74,True,Fast Food
+item_692,res_14,Schezwan Chutney,accompaniment_dip,48,True,Universal
+item_693,res_14,Gulab Jamun,dessert,71,True,Universal
+item_694,res_14,Diet Coke,beverage,69,True,Universal
+item_695,res_14,Blue Lagoon Mocktail,beverage,148,True,Universal
+item_696,res_14,Samosa (2 pcs),street_food,42,True,Fast Food
+item_697,res_14,Classic Veg Burger,street_food,96,True,Fast Food
+item_698,res_14,Garlic Bread with Cheese,starter,155,True,Fast Food
+item_699,res_14,Sweet Lassi,beverage,73,True,Universal
+item_700,res_14,Kesar Pista Kulfi,dessert,117,True,Universal
+item_701,res_14,Veg Grilled Sandwich,street_food,108,True,Fast Food
+item_702,res_14,Fresh Lime Soda,beverage,106,True,Universal
+item_703,res_14,Bhel Puri,street_food,67,True,Fast Food
+item_704,res_14,Peri Peri Fries,starter,112,True,Fast Food
+item_705,res_14,Mint Chutney,accompaniment_dip,36,True,Universal
+item_706,res_14,Chicken Nuggets (6 pcs),starter,155,False,Fast Food
+item_707,res_14,Oreo Milkshake,beverage,138,True,Universal
+item_708,res_14,Cheesy Loaded Nachos,starter,190,True,Fast Food
+item_709,res_14,Cheese Sandwich,street_food,142,True,Fast Food
+item_710,res_14,Red Velvet Cupcake,dessert,112,True,Universal
+item_711,res_14,Aloo Tikki Chaat,street_food,100,True,Fast Food
+item_712,res_14,Spicy Mayo,accompaniment_dip,35,True,Universal
+item_713,res_14,Cold Coffee,beverage,175,True,Universal
+item_714,res_14,Hot Cappuccino,beverage,135,True,Universal
+item_715,res_14,Executive Non-Veg Thali,combo,321,False,North Indian
+item_716,res_14,Vanilla Ice Cream,dessert,111,True,Universal
+item_717,res_14,Chocolate Brownie,dessert,188,True,Universal
+item_718,res_14,Mega Dessert Platter,combo,399,True,Universal
+item_719,res_14,Iced Peach Tea,beverage,123,True,Universal
+item_720,res_14,Chicken BBQ Pizza,street_food,314,False,Fast Food
+item_721,res_14,Burger & Fries Combo,combo,202,True,Fast Food
+item_722,res_14,Snack Party Platter,combo,728,True,Fast Food
+item_723,res_14,Paneer Tikka Wrap,street_food,157,True,Fast Food
+item_724,res_15,Mango Shake,beverage,150,True,Universal
+item_725,res_15,Chilli Garlic Mushroom,starter,214,True,Chinese
+item_726,res_15,Veg Chowmein,chinese_main,142,True,Chinese
+item_727,res_15,Chicken Momos (8 pcs),starter,143,False,Chinese
+item_728,res_15,Family North Indian Feast,combo,1090,True,North Indian
+item_729,res_15,Spicy Mayo,accompaniment_dip,48,True,Universal
+item_730,res_15,Crispy Chilli Babycorn,starter,208,True,Chinese
+item_731,res_15,Snack Party Platter,combo,758,True,Fast Food
+item_732,res_15,Iced Peach Tea,beverage,94,True,Universal
+item_733,res_15,Executive Veg Thali,combo,312,True,North Indian
+item_734,res_15,Hakka Noodles,chinese_main,246,True,Chinese
+item_735,res_15,Blue Lagoon Mocktail,beverage,134,True,Universal
+item_736,res_15,Schezwan Noodles,chinese_main,193,True,Chinese
+item_737,res_15,Red Velvet Cupcake,dessert,107,True,Universal
+item_738,res_15,Oreo Milkshake,beverage,144,True,Universal
+item_739,res_15,Sweet Tamarind Chutney,accompaniment_dip,38,True,Universal
+item_740,res_15,Chocolate Brownie,dessert,126,True,Universal
+item_741,res_15,Ultimate Chinese Party Combo,combo,946,True,Chinese
+item_742,res_15,Veg Manchurian,chinese_main,205,True,Chinese
+item_743,res_15,Garlic Dip,accompaniment_dip,46,True,Universal
+item_744,res_15,Couple Biryani Combo,combo,693,False,North Indian
+item_745,res_15,Noodles & Manchurian Bowl,combo,289,True,Chinese
+item_746,res_15,Vanilla Ice Cream,dessert,90,True,Universal
+item_747,res_15,Moong Dal Halwa,dessert,121,True,Universal
+item_748,res_15,Mushroom Manchurian,chinese_main,267,True,Chinese
+item_749,res_15,Cold Coffee,beverage,133,True,Universal
+item_750,res_15,Pizza & Wings Party Pack,combo,810,False,Fast Food
+item_751,res_15,Hot Cappuccino,beverage,160,True,Universal
+item_752,res_15,Diet Coke,beverage,72,True,Universal
+item_753,res_15,Fried Rice,chinese_main,165,True,Chinese
+item_754,res_15,Mega Dessert Platter,combo,506,True,Universal
+item_755,res_15,Pan Fried Noodles,chinese_main,268,True,Chinese
+item_756,res_15,Schezwan Chutney,accompaniment_dip,43,True,Universal
+item_757,res_15,Masala Coke,beverage,69,True,Universal
+item_758,res_15,Chicken Lollipop,starter,212,False,Chinese
+item_759,res_15,Black Forest Pastry,dessert,152,True,Universal
+item_760,res_15,Crispy Corn,starter,164,True,Chinese
+item_761,res_15,Honey Chilli Potato,starter,161,True,Chinese
+item_762,res_15,Chilli Chicken Gravy,chinese_main,247,False,Chinese
+item_763,res_15,Cheesecake Slice,dessert,241,True,Universal
+item_764,res_15,Chicken Spring Roll,starter,246,False,Chinese
+item_765,res_15,Sweet Lassi,beverage,75,True,Universal
+item_766,res_15,Executive Non-Veg Thali,combo,345,False,North Indian
