@@ -1,28 +1,24 @@
+import os
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, ORJSONResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
-from ml_engine import CSAORecommender
 import uvicorn
+from ml_engine import CSAORecommender
 
-app = FastAPI()
+app = FastAPI(default_response_class=ORJSONResponse)
 
-# compress large payloads to fix port-forwarding latency
 app.add_middleware(GZipMiddleware, minimum_size=500)
+app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
-# prevent pre-flight request lag
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
-templates = Jinja2Templates(directory="templates")
+base_dir = os.path.dirname(os.path.abspath(__file__))
+template_path = os.path.join(base_dir, "templates")
+templates = Jinja2Templates(directory=template_path)
+
 engine = CSAORecommender()
 
 class CartRequest(BaseModel):
@@ -31,17 +27,6 @@ class CartRequest(BaseModel):
     user_id: str = None
     current_hour: int = 14 
     current_month: int = 3
-
-class FeedRequest(BaseModel):
-    user_id: str = None
-    current_hour: int = 14
-    current_month: int = 3
-
-class CheckoutRequest(BaseModel):
-    cart_item_ids: List[str]
-    res_id: str
-    user_id: str
-    total_amount: float
 
 @app.get("/", response_class=HTMLResponse)
 async def serve_ui(request: Request):
@@ -52,8 +37,12 @@ def get_users():
     return {"users": engine.get_users()}
 
 @app.post("/api/feed")
-def get_feed(req: FeedRequest):
-    return {"items": engine.get_feed(req.user_id, req.current_hour, req.current_month, limit=2000)} 
+def get_feed(req: dict):
+   
+    u_id = req.get('user_id', 'user_1')
+    hr = req.get('current_hour', 14)
+    mo = req.get('current_month', 3)
+    return {"items": engine.get_feed(u_id, hr, mo, limit=1000)}
 
 @app.post("/api/recommend")
 def get_recommendations(req: CartRequest):
@@ -62,13 +51,17 @@ def get_recommendations(req: CartRequest):
 
 @app.post("/api/upsell")
 def get_upsell(req: CartRequest):
-    upsells = engine.get_upsell(req.cart_item_ids, req.res_id)
-    return {"upsells": upsells}
+    return {"upsells": engine.get_upsell(req.cart_item_ids, req.res_id)}
 
 @app.post("/api/checkout")
-def process_checkout(req: CheckoutRequest):
-    engine.save_order(req.user_id, req.res_id, req.cart_item_ids, req.total_amount)
+def process_checkout(req: CartRequest):
+    engine.save_order(req.user_id, req.res_id, req.cart_item_ids, 0)
     return {"status": "success"}
 
+@app.exception_handler(404)
+async def custom_404_handler(request, __):
+    return RedirectResponse("/")
+
 if __name__ == "__main__":
-    uvicorn.run("app:app", host="0.0.0.0", port=9000, reload=True)
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("app:app", host="0.0.0.0", port=port)
